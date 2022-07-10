@@ -4,10 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "AbilitySystemInterface.h" //allows defining an interface for ability system
 #include "HwanYoungVer2Character.generated.h"
 
+
 UCLASS(config=Game)
-class AHwanYoungVer2Character : public ACharacter
+class AHwanYoungVer2Character : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
@@ -18,6 +20,11 @@ class AHwanYoungVer2Character : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
+	/** Our ability system */ 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Abilities, meta = (AllowPrivateAccess = "true")) 
+	class UAbilitySystemComponent* AbilitySystem;
+
 public:
 	AHwanYoungVer2Character();
 
@@ -68,5 +75,8 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+	//We add this function, overriding it from IAbilitySystemInterface. 
+	FORCEINLINE UAbilitySystemComponent* GetAbilitySystemComponent() const override { return AbilitySystem; }
+	
 };
 

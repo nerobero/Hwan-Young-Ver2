@@ -2,8 +2,11 @@
 
 #pragma once
 
+
 #include "CoreMinimal.h"
 #include "AttributeSet.h"
+#include "PlayerCharacAttributeSet.generated.h"
+
 //#include "AttributeSetBase.generated.h"
 
 
@@ -11,15 +14,24 @@
  * 
  */
 UCLASS()
-class HWANYOUNGVER2_API PlayerCharacAttributeSet : public UAttributeSet
+class HWANYOUNGVER2_API UPlayerCharacAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
 public:
-	PlayerCharacAttributeSet(); //constructor
-	~PlayerCharacAttributeSet();
+	UPlayerCharacAttributeSet(); //constructor
+	//~PlayerCharacAttributeSet();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
-	FGameplayAttributeData HP;
+	FGameplayAttributeData hp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	FGameplayAttributeData mp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	FGameplayAttributeData gaugeP;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	FGameplayAttributeData physical;
 
 	
 };

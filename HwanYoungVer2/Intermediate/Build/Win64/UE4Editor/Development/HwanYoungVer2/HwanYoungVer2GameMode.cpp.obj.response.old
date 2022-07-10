@@ -31,8 +31,10 @@
 /wd4244
 /wd4838
 /I .
-/I "C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Inc\HwanYoungVer2"
-/I "C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Source"
+/I C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Private
+/I C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Inc\HwanYoungVer2
+/I C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source
+/I C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -265,12 +267,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Source\HwanYoungVer2\HwanYoungVer2GameMode.cpp"
-/FI"C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\Definitions.HwanYoungVer2.h"
-/Fo"C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\HwanYoungVer2GameMode.cpp.obj"
+/FI"C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\HwanYoungVer2GameMode.cpp"
+/FI"C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\Definitions.HwanYoungVer2.h"
+/Fo"C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\HwanYoungVer2GameMode.cpp.obj"
 /TP
 /GR-
 /W4

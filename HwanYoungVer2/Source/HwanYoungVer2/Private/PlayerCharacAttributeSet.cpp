@@ -5,15 +5,16 @@
 
 //UCLASS()
 
-PlayerCharacAttributeSet::PlayerCharacAttributeSet()
+UPlayerCharacAttributeSet::UPlayerCharacAttributeSet()
 {
 
 }
 
-PlayerCharacAttributeSet::~PlayerCharacAttributeSet()
+UPlayerCharacAttributeSet::~UPlayerCharacAttributeSet()
 {
 }
 
-PlayerCharacAttributeSet::UPROPERTY(EditAnywhere, BlueprintReadWrite, Category)
+UPlayerCharacAttributeSet::UPROPERTY(EditAnywhere, BlueprintReadWrite, Category)
 {
+
 }
