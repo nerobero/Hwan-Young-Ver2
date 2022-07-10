@@ -884,3 +884,110 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.07.10-03.30.49:802][930]LogHttp: Warning: 0000021584208800: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
 [2022.07.10-03.30.49:802][930]LogHttp: Warning: 0000021584208800: libcurl info message cache 1 (Closing connection 1)
 [2022.07.10-03.30.49:802][930]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BAE436750-49E2-2516-A0A9-A28209CB329F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=cfc450fe43229aa942eb5ba505b9c5dd%7C32687adfc092452a8c7b3c7eba946f33%7Cf3df08f8-79d3-4f93-b2f7-11455938a6e8&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2022.07.10-03.35.49:406][896]LogAssetEditorSubsystem: Opening Asset editor for GameplayAbilityBlueprint /Game/ThirdPersonCPP/AbilitySystem/Haesol_Melee1.Haesol_Melee1
+[2022.07.10-03.35.52:710][ 74]BlueprintLog: New page: Compile Haesol_Melee1
+[2022.07.10-03.35.52:732][ 74]LogUObjectHash: Compacting FUObjectHashTables data took   2.04ms
+[2022.07.10-03.36.14:986][405]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.07.10-03.38.21:182][472]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/Haesol_Melee143AA9A5F42ACF3BDB66915A358CF59D5.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/AbilitySystem/Haesol_Melee1.uasset'
+[2022.07.10-03.38.21:192][472]AssetCheck: New page: Asset Save: Haesol_Melee1
+[2022.07.10-03.38.21:192][472]LogContentValidation: Display: Validating GameplayAbilityBlueprint /Game/ThirdPersonCPP/AbilitySystem/Haesol_Melee1.Haesol_Melee1
+[2022.07.10-03.39.56:446][637]LogSlate: Window 'Pick Parent Class' being destroyed
+[2022.07.10-03.39.56:455][637]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.07.10-03.39.56:463][637]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.07.10-03.40.08:629][367]LogContentBrowser: Attempting asset rename: NewBlueprint -> Player_Charac_Attribute
+[2022.07.10-03.40.08:632][367]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.07.10-03.40.10:024][450]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/AbilitySystem/Player_Charac_Attribute.Player_Charac_Attribute
+[2022.07.10-03.45.21:815][508]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/Player_Charac_AttributeB070E9564D89BB416023CF955F7878E3.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/AbilitySystem/Player_Charac_Attribute.uasset'
+[2022.07.10-03.45.21:829][508]AssetCheck: New page: Asset Save: Player_Charac_Attribute
+[2022.07.10-03.45.21:829][508]LogContentValidation: Display: Validating Blueprint /Game/ThirdPersonCPP/AbilitySystem/Player_Charac_Attribute.Player_Charac_Attribute
+[2022.07.10-03.45.48:390][923]LogTabManager: Warning: Cannot spawn tab because no spawner is registered for 'MyBlueprint'
+[2022.07.10-03.45.48:390][923]LogSlate: The tab "MyBlueprint" attempted to spawn but failed for some reason. An "unrecognized tab" will be returned instead.
+[2022.07.10-03.46.06:192][989]LogSlate: Window 'Player_Charac_Attribute' being destroyed
+[2022.07.10-03.46.06:195][989]LogSlate: Window 'Player_Charac_Attribute' being destroyed
+[2022.07.10-03.46.06:200][989]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2022.07.10-03.46.06:200][989]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.07.10-03.46.06:233][989]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2022.07.10-03.46.06:233][989]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.07.10-03.46.54:466][623]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2022.07.10-03.46.56:523][623]LogSlate: Window 'Delete Assets' being destroyed
+[2022.07.10-03.46.56:577][623]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2022.07.10-03.46.56:599][623]LogUObjectHash: Compacting FUObjectHashTables data took   1.31ms
+[2022.07.10-03.46.56:613][623]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2022.07.10-03.47.49:714][792]LogAssetEditorSubsystem: Opening Asset editor for GameplayAbilityBlueprint /Game/ThirdPersonCPP/AbilitySystem/Haesol_Melee1.Haesol_Melee1
+[2022.07.10-03.47.55:435][119]LogSlate: Window 'Haesol_Melee1' being destroyed
+[2022.07.10-03.47.55:442][119]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2022.07.10-03.47.55:442][119]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.07.10-03.47.55:478][119]LogAssetEditorSubsystem: Opening Asset editor for GameplayAbilityBlueprint /Game/ThirdPersonCPP/AbilitySystem/Haesol_Melee1.Haesol_Melee1
+[2022.07.10-03.49.51:870][897]LogSlate: Window 'Haesol_Melee1' being destroyed
+[2022.07.10-03.49.51:873][897]LogSlate: Window 'Haesol_Melee1' being destroyed
+[2022.07.10-03.49.51:875][897]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2022.07.10-03.49.51:875][897]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.07.10-03.50.32:172][282]LogSlate: Window 'Plugins' being destroyed
+[2022.07.10-03.50.32:176][282]LogSlate: Window 'Plugins' being destroyed
+[2022.07.10-03.50.32:176][282]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/' was aborted.
+[2022.07.10-03.52.24:948][208]Running C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/HwanYoungVer2.uproject" -game -rocket -progress
+[2022.07.10-03.52.25:252][208]Discovering modules, targets and source code for project...
+[2022.07.10-03.52.26:962][208]Binding IntelliSense data...
+[2022.07.10-03.52.29:082][208]Binding IntelliSense data... 100%
+[2022.07.10-03.52.29:082][208]Writing project files...
+[2022.07.10-03.52.31:903][208]Writing project files... 100%
+[2022.07.10-03.52.32:032][208]Candidate modules for hot reload:
+[2022.07.10-03.52.32:032][208]  HwanYoungVer2
+[2022.07.10-03.52.32:033][208]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=HwanYoungVer2,1344 HwanYoungVer2Editor Win64 Development -Project="C:/Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/HwanYoungVer2.uproject" "C:/Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/HwanYoungVer2.uproject"  -IgnoreJunk]
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: New page: Compilation - Jul 10, 2022, 9:53:01 PM
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2).
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: Creating makefile for HwanYoungVer2Editor (no existing makefile)
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: Parsing headers for HwanYoungVer2Editor
+[2022.07.10-03.53.01:377][208]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\HwanYoungVer2.uproject" "C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\HwanYoungVer2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\user\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: Reflection code generated for HwanYoungVer2Editor in 4.0302386 seconds
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: Building HwanYoungVer2Editor...
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: Using Visual Studio 2019 14.29.30139 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.07.10-03.53.01:377][208]CompilerResultsLog: Building 12 actions with 12 processes...
+[2022.07.10-03.53.01:377][208]CompilerResultsLog:   [1/12] Default.rc2
+[2022.07.10-03.53.01:377][208]CompilerResultsLog:   [2/12] SharedPCH.Engine.ShadowErrors.cpp
+[2022.07.10-03.53.01:377][208]CompilerResultsLog:   [3/12] PlayerCharacAttributeSet.cpp
+[2022.07.10-03.53.01:377][208]CompilerResultsLog:   [4/12] HwanYoungVer2.cpp
+[2022.07.10-03.53.01:377][208]CompilerResultsLog:   [5/12] HwanYoungVer2.init.gen.cpp
+[2022.07.10-03.53.01:377][208]CompilerResultsLog:   [6/12] HwanYoungVer2GameMode.cpp
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:   [7/12] HwanYoungVer2GameMode.gen.cpp
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:   [8/12] HwanYoungVer2Character.gen.cpp
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:   [9/12] HwanYoungVer2Character.cpp
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:   [10/12] UE4Editor-HwanYoungVer2-1344.lib
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:      C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-1344.lib ???̺귯?? ?? C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-1344.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:   [11/12] UE4Editor-HwanYoungVer2-1344.dll
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:      C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-1344.suppressed.lib ???̺귯?? ?? C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-1344.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.07.10-03.53.01:378][208]CompilerResultsLog:   [12/12] HwanYoungVer2Editor.target
+[2022.07.10-03.53.01:378][208]CompilerResultsLog: Total time in Parallel executor: 23.33 seconds
+[2022.07.10-03.53.01:378][208]CompilerResultsLog: Total execution time: 29.27 seconds
+[2022.07.10-03.53.01:378][208]LogMainFrame: MainFrame: Module compiling took 29.356 seconds
+[2022.07.10-03.53.01:413][208]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HwanYoungVer2' in 0.0003 seconds. Added 2 classes and 2 folders.
+[2022.07.10-03.53.01:416][208]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.07.10-03.53.01:498][208]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0092 seconds. Added 3687 classes and 868 folders.
+[2022.07.10-03.53.01:498][208]Display: HotReload took 29.5s.
+[2022.07.10-03.53.01:504][208]Warning: HotReload operation took 29.5s.
+[2022.07.10-03.53.01:931][208]LogSlate: Window 'Add C++ Class' being destroyed
+[2022.07.10-03.53.02:248][209]LogHotReload: New module detected: UE4Editor-HwanYoungVer2-1344.dll
+[2022.07.10-03.53.02:260][210]LogHotReload: Starting Hot-Reload from IDE
+[2022.07.10-03.53.02:286][210]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HwanYoungVer2' in 0.0003 seconds. Added 2 classes and 2 folders.
+[2022.07.10-03.53.02:290][210]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2022.07.10-03.53.02:303][210]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0088 seconds. Added 3687 classes and 868 folders.
+[2022.07.10-03.53.02:305][210]Display: HotReload took  0.0s.
+[2022.07.10-04.44.23:212][803]LogWindows: Warning: CreateProc failed: 지정된 파일을 찾을 수 없습니다. (0x00000002)
+[2022.07.10-04.44.23:212][803]LogWindows: Warning: URL: C:/Program Files/Git/bin/git.exe version
+[2022.07.10-04.44.23:212][803]LogWindows: Warning: CreateProc failed: 지정된 파일을 찾을 수 없습니다. (0x00000002)
+[2022.07.10-04.44.23:212][803]LogWindows: Warning: URL: C:/Program Files (x86)/Git/bin/git.exe version
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: CreateProc failed: 지정된 파일을 찾을 수 없습니다. (0x00000002)
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: URL: C:\Users\user\AppData\Local/Programs/Git/cmd/git.exe version
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: CreateProc failed: 지정된 파일을 찾을 수 없습니다. (0x00000002)
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: URL: C:/Program Files (x86)/SmartGit/git/bin/git.exe version
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: CreateProc failed: 지정된 파일을 찾을 수 없습니다. (0x00000002)
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: URL: C:/Program Files (x86)/SmartGit/bin/git.exe version
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: CreateProc failed: 지정된 파일을 찾을 수 없습니다. (0x00000002)
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: URL: C:\Users\user\AppData\Local/Atlassian/SourceTree/git_local/bin/git.exe version
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: CreateProc failed: 지정된 파일을 찾을 수 없습니다. (0x00000002)
+[2022.07.10-04.44.23:213][803]LogWindows: Warning: URL: C:/Program Files (x86)/fournova/Tower/vendor/Git/bin/git.exe version
+[2022.07.10-04.44.25:553][943]LogWindows: Warning: CreateProc failed: 액세스가 거부되었습니다. (0x00000005)
+[2022.07.10-04.44.25:553][943]LogWindows: Warning: URL: C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/ version
+[2022.07.10-04.45.37:012][201]LogSlate: Window 'Source Control Login' being destroyed
+[2022.07.10-04.46.31:279][201]LogUObjectHash: Compacting FUObjectHashTables data took   4.62ms
+[2022.07.10-04.46.31:293][201]LogSlate: Window 'HwanYoungVer2 - Unreal Editor' being destroyed

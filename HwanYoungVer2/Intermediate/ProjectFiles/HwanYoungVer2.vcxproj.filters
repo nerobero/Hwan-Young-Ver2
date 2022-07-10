@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\HwanYoungVer2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8203663E-95C8-416B-A174-2622BCDFF459}</UniqueIdentifier>
+      <UniqueIdentifier>{08F33A57-A752-4D92-9710-05A781299436}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F51DBC67-491A-4A16-9A3C-8B22922292D7}</UniqueIdentifier>
+      <UniqueIdentifier>{23B5C19C-1441-46DE-A6E1-D18DEA4ACF5E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\HwanYoungVer2">
-      <UniqueIdentifier>{654858F0-61A4-4780-8352-FD65A016B23A}</UniqueIdentifier>
+      <UniqueIdentifier>{CB2C10AF-8065-4F4B-95C6-D016CA81659A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2\HwanYoungVer2.Build.cs">
       <Filter>Source\HwanYoungVer2</Filter>
@@ -52,6 +52,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\HwanYoungVer2\HwanYoungVer2GameMode.h">
       <Filter>Source\HwanYoungVer2</Filter>
+    </ClInclude>
+    <Filter Include="Source\HwanYoungVer2\Private">
+      <UniqueIdentifier>{F110E3C4-9292-4A4A-BDDA-A7BA374599B2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HwanYoungVer2\Private\PlayerCharacAttributeSet.cpp">
+      <Filter>Source\HwanYoungVer2\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\HwanYoungVer2\Public">
+      <UniqueIdentifier>{D85D1F7B-A3AC-4A49-986D-F7C851DE7F58}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\HwanYoungVer2\Public\PlayerCharacAttributeSet.h">
+      <Filter>Source\HwanYoungVer2\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\user\\OneDrive\\Documents\\Unreal Projects\\HwanYoungVer2\\Source\\HwanYoungVer2\\HwanYoungVer2.Build.cs",
-		"C:\\Users\\user\\OneDrive\\Documents\\Unreal Projects\\HwanYoungVer2\\Source\\HwanYoungVer2.Target.cs",
-		"C:\\Users\\user\\OneDrive\\Documents\\Unreal Projects\\HwanYoungVer2\\Source\\HwanYoungVer2Editor.Target.cs"
+		"C:\\Users\\user\\OneDrive\\Documents\\GitHub\\Hwan-Young-Ver2\\HwanYoungVer2\\Source\\HwanYoungVer2\\HwanYoungVer2.Build.cs",
+		"C:\\Users\\user\\OneDrive\\Documents\\GitHub\\Hwan-Young-Ver2\\HwanYoungVer2\\Source\\HwanYoungVer2.Target.cs",
+		"C:\\Users\\user\\OneDrive\\Documents\\GitHub\\Hwan-Young-Ver2\\HwanYoungVer2\\Source\\HwanYoungVer2Editor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }
