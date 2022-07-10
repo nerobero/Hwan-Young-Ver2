@@ -1,0 +1,2 @@
+C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\Definitions.HwanYoungVer2.h
+C:\Users\user\OneDrive\Documents\Unreal Projects\HwanYoungVer2\Source\HwanYoungVer2\HwanYoungVer2.h
