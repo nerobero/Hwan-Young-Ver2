@@ -10,11 +10,13 @@ UPlayerCharacAttributeSet::UPlayerCharacAttributeSet()
 
 }
 
+/**
 UPlayerCharacAttributeSet::~UPlayerCharacAttributeSet()
 {
 }
+*/
 
-UPlayerCharacAttributeSet::UPROPERTY(EditAnywhere, BlueprintReadWrite, Category)
-{
+//UPlayerCharacAttributeSet::UPROPERTY(EditAnywhere, BlueprintReadWrite, Category)
+//{
 
-}
+//}
