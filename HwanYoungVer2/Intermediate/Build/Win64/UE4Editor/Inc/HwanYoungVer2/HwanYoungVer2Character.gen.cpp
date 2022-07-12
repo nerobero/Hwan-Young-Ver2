@@ -13,15 +13,99 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 // Cross Module References
+	HWANYOUNGVER2_API UEnum* Z_Construct_UEnum_HwanYoungVer2_AbilityInput();
+	UPackage* Z_Construct_UPackage__Script_HwanYoungVer2();
 	HWANYOUNGVER2_API UClass* Z_Construct_UClass_AHwanYoungVer2Character_NoRegister();
 	HWANYOUNGVER2_API UClass* Z_Construct_UClass_AHwanYoungVer2Character();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
-	UPackage* Z_Construct_UPackage__Script_HwanYoungVer2();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemComponent_NoRegister();
 	GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
 // End Cross Module References
+	static UEnum* AbilityInput_StaticEnum()
+	{
+		static UEnum* Singleton = nullptr;
+		if (!Singleton)
+		{
+			Singleton = GetStaticEnum(Z_Construct_UEnum_HwanYoungVer2_AbilityInput, Z_Construct_UPackage__Script_HwanYoungVer2(), TEXT("AbilityInput"));
+		}
+		return Singleton;
+	}
+	template<> HWANYOUNGVER2_API UEnum* StaticEnum<AbilityInput>()
+	{
+		return AbilityInput_StaticEnum();
+	}
+	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_AbilityInput(AbilityInput_StaticEnum, TEXT("/Script/HwanYoungVer2"), TEXT("AbilityInput"), false, nullptr, nullptr);
+	uint32 Get_Z_Construct_UEnum_HwanYoungVer2_AbilityInput_Hash() { return 2664218718U; }
+	UEnum* Z_Construct_UEnum_HwanYoungVer2_AbilityInput()
+	{
+#if WITH_HOT_RELOAD
+		UPackage* Outer = Z_Construct_UPackage__Script_HwanYoungVer2();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("AbilityInput"), 0, Get_Z_Construct_UEnum_HwanYoungVer2_AbilityInput_Hash(), false);
+#else
+		static UEnum* ReturnEnum = nullptr;
+#endif // WITH_HOT_RELOAD
+		if (!ReturnEnum)
+		{
+			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
+				{ "AbilityInput::UseWeapon", (int64)AbilityInput::UseWeapon },
+				{ "AbilityInput::SwitchWeapon", (int64)AbilityInput::SwitchWeapon },
+				{ "AbilityInput::UseActive1", (int64)AbilityInput::UseActive1 },
+				{ "AbilityInput::UseActive2", (int64)AbilityInput::UseActive2 },
+				{ "AbilityInput::UseActive3", (int64)AbilityInput::UseActive3 },
+				{ "AbilityInput::UseUlt", (int64)AbilityInput::UseUlt },
+				{ "AbilityInput::PassiveDash", (int64)AbilityInput::PassiveDash },
+			};
+#if WITH_METADATA
+			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "BlueprintType", "true" },
+				{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+				{ "PassiveDash.Comment", "// ID: 5, ult\n" },
+				{ "PassiveDash.DisplayName", "Dash" },
+				{ "PassiveDash.Name", "AbilityInput::PassiveDash" },
+				{ "PassiveDash.ToolTip", "ID: 5, ult" },
+				{ "SwitchWeapon.Comment", "//ID: 0, using weapon to attack\n" },
+				{ "SwitchWeapon.DisplayName", "Switch Weapons" },
+				{ "SwitchWeapon.Name", "AbilityInput::SwitchWeapon" },
+				{ "SwitchWeapon.ToolTip", "ID: 0, using weapon to attack" },
+				{ "UseActive1.Comment", "//ID: 1, switching weapons\n" },
+				{ "UseActive1.DisplayName", "Use Active Skill 1" },
+				{ "UseActive1.Name", "AbilityInput::UseActive1" },
+				{ "UseActive1.ToolTip", "ID: 1, switching weapons" },
+				{ "UseActive2.Comment", "// ID: 2, active 1\n" },
+				{ "UseActive2.DisplayName", "Use Active Skill 2" },
+				{ "UseActive2.Name", "AbilityInput::UseActive2" },
+				{ "UseActive2.ToolTip", "ID: 2, active 1" },
+				{ "UseActive3.Comment", "// ID: 3, active 2\n" },
+				{ "UseActive3.DisplayName", "Use Active Skill 3" },
+				{ "UseActive3.Name", "AbilityInput::UseActive3" },
+				{ "UseActive3.ToolTip", "ID: 3, active 2" },
+				{ "UseUlt.Comment", "// ID: 4, active 3\n" },
+				{ "UseUlt.DisplayName", "Use Ultimate Skill" },
+				{ "UseUlt.Name", "AbilityInput::UseUlt" },
+				{ "UseUlt.ToolTip", "ID: 4, active 3" },
+				{ "UseWeapon.DisplayName", "Use Weapon" },
+				{ "UseWeapon.Name", "AbilityInput::UseWeapon" },
+			};
+#endif
+			static const UE4CodeGen_Private::FEnumParams EnumParams = {
+				(UObject*(*)())Z_Construct_UPackage__Script_HwanYoungVer2,
+				nullptr,
+				"AbilityInput",
+				"AbilityInput",
+				Enumerators,
+				UE_ARRAY_COUNT(Enumerators),
+				RF_Public|RF_Transient|RF_MarkAsNative,
+				EEnumFlags::None,
+				UE4CodeGen_Private::EDynamicType::NotDynamic,
+				(uint8)UEnum::ECppForm::EnumClass,
+				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
+			};
+			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
+		}
+		return ReturnEnum;
+	}
 	void AHwanYoungVer2Character::StaticRegisterNativesAHwanYoungVer2Character()
 	{
 	}

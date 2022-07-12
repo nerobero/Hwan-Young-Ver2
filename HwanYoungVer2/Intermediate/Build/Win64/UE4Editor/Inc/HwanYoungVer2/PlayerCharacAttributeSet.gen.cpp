@@ -66,9 +66,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_hp_MetaData[] = {
 		{ "Category", "Attributes" },
-		{ "Comment", "//constructor\n//~PlayerCharacAttributeSet();\n" },
+		{ "Comment", "//destructor\n" },
 		{ "ModuleRelativePath", "Public/PlayerCharacAttributeSet.h" },
-		{ "ToolTip", "constructor" },
+		{ "ToolTip", "destructor" },
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_hp = { "hp", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacAttributeSet, hp), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_hp_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_hp_MetaData)) };
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacAttributeSet, 1850952848);
+	IMPLEMENT_CLASS(UPlayerCharacAttributeSet, 2115159214);
 	template<> HWANYOUNGVER2_API UClass* StaticClass<UPlayerCharacAttributeSet>()
 	{
 		return UPlayerCharacAttributeSet::StaticClass();

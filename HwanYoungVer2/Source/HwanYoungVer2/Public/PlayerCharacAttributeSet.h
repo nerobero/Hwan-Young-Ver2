@@ -19,7 +19,7 @@ class HWANYOUNGVER2_API UPlayerCharacAttributeSet : public UAttributeSet
 	GENERATED_BODY()
 public:
 	UPlayerCharacAttributeSet(); //constructor
-	//~PlayerCharacAttributeSet();
+	~UPlayerCharacAttributeSet(); //destructor
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
 	FGameplayAttributeData hp;

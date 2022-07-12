@@ -80,3 +80,14 @@ public:
 	
 };
 
+UENUM(BlueprintType)
+enum class AbilityInput : uint8
+{
+	UseWeapon UMETA(DisplayName = "Use Weapon"), //ID: 0, using weapon to attack
+	SwitchWeapon UMETA(DisplayName = "Switch Weapons"), //ID: 1, switching weapons
+	UseActive1 UMETA(DisplayName = "Use Active Skill 1"), // ID: 2, active 1
+	UseActive2 UMETA(DisplayName = "Use Active Skill 2"), // ID: 3, active 2
+	UseActive3 UMETA(DisplayName = "Use Active Skill 3"), // ID: 4, active 3
+	UseUlt UMETA(DisplayName = "Use Ultimate Skill"), // ID: 5, ult
+	PassiveDash UMETA(DisplayName = "Dash"), // ID: 6, dash (passive)
+};

@@ -97,4 +97,16 @@ template<> HWANYOUNGVER2_API UClass* StaticClass<class AHwanYoungVer2Character>(
 #define CURRENT_FILE_ID HwanYoungVer2_Source_HwanYoungVer2_HwanYoungVer2Character_h
 
 
+#define FOREACH_ENUM_ABILITYINPUT(op) \
+	op(AbilityInput::UseWeapon) \
+	op(AbilityInput::SwitchWeapon) \
+	op(AbilityInput::UseActive1) \
+	op(AbilityInput::UseActive2) \
+	op(AbilityInput::UseActive3) \
+	op(AbilityInput::UseUlt) \
+	op(AbilityInput::PassiveDash) 
+
+enum class AbilityInput : uint8;
+template<> HWANYOUNGVER2_API UEnum* StaticEnum<AbilityInput>();
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

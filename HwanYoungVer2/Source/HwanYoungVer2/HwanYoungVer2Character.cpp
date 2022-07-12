@@ -78,6 +78,10 @@ void AHwanYoungVer2Character::SetupPlayerInputComponent(class UInputComponent* P
 
 	// VR headset functionality
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AHwanYoungVer2Character::OnResetVR);
+
+	// Set up ability system key bindings 
+	AbilitySystem->BindAbilityActivationToInputComponent(PlayerInputComponent,
+		FGameplayAbilityInputBinds("ConfirmInput", "CancelInput", "AbilityInput"));
 }
 
 
