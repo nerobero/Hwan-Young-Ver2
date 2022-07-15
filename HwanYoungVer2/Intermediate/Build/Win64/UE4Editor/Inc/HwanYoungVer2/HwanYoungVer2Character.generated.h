@@ -63,7 +63,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AHwanYoungVer2Character); \
 #define HwanYoungVer2_Source_HwanYoungVer2_HwanYoungVer2Character_h_14_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AHwanYoungVer2Character, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AHwanYoungVer2Character, FollowCamera); } \
-	FORCEINLINE static uint32 __PPO__AbilitySystem() { return STRUCT_OFFSET(AHwanYoungVer2Character, AbilitySystem); }
+	FORCEINLINE static uint32 __PPO__AbilitySystem() { return STRUCT_OFFSET(AHwanYoungVer2Character, AbilitySystem); } \
+	FORCEINLINE static uint32 __PPO__Ability1() { return STRUCT_OFFSET(AHwanYoungVer2Character, Ability1); }
 
 
 #define HwanYoungVer2_Source_HwanYoungVer2_HwanYoungVer2Character_h_11_PROLOG

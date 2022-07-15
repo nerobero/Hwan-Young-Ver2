@@ -25,6 +25,10 @@ class AHwanYoungVer2Character : public ACharacter, public IAbilitySystemInterfac
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Abilities, meta = (AllowPrivateAccess = "true")) 
 	class UAbilitySystemComponent* AbilitySystem;
 
+	/** More abilities are to be added, but for the sake of simplicity, only one has been added for now*/
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Abilities, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UGameplayAbility> Ability1;
+
 public:
 	AHwanYoungVer2Character();
 
@@ -69,6 +73,10 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
+
+	// Begin Play
+	virtual void BeginPlay() override; 
+
 
 public:
 	/** Returns CameraBoom subobject **/

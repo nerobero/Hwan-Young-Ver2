@@ -81,7 +81,26 @@ void AHwanYoungVer2Character::SetupPlayerInputComponent(class UInputComponent* P
 
 	// Set up ability system key bindings 
 	AbilitySystem->BindAbilityActivationToInputComponent(PlayerInputComponent,
-		FGameplayAbilityInputBinds("ConfirmInput", "CancelInput", "AbilityInput"));
+		FGameplayAbilityInputBinds("ConfirmInput", "CancelInput", "AbilityInput")); 
+}
+
+
+void AHwanYoungVer2Character::BeginPlay()
+{
+	Super::BeginPlay(); 
+
+	//is the AbilitySystem valid?
+	if (AbilitySystem) {
+		//checks if we are authority and Ability1 is valid 
+		//if a client tries to give oneself an ability,
+		//an assert is violated.
+		if (HasAuthority() && Ability1) {
+			AbilitySystem->GiveAbility(FGameplayAbilitySpec(Ability1.GetDefaultObject(), 1, 0));
+		}
+		//tells the Abilitysystem what its Owner (the actor responsible for the AbilitySystem) 
+		//and Avatar (the actor through which the AbilitySystem acts, uses Abilities from, etc.) is.
+		AbilitySystem->InitAbilityActorInfo(this, this);
+	}
 }
 
 
@@ -146,3 +165,14 @@ void AHwanYoungVer2Character::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+
+/** Updates the AbilitysystemComponent's actorInfo, especially in a multiplayer environment
+* but not sure if our implementation needs this, since it is not a multiplayer game
+* void AHwanYoungVer2Character::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+
+	AbilitySystem->RefreshAbilityActorInfo();
+}
+*/
+

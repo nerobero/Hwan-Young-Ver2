@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\HwanYoungVer2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{29A47FE3-B4D3-45BD-BB06-5A552C29FFFA}</UniqueIdentifier>
+      <UniqueIdentifier>{A807B038-3ECF-439D-A5C1-47C9F3B318C5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A967E767-39B4-4DF3-9B73-2B704FE883FD}</UniqueIdentifier>
+      <UniqueIdentifier>{B5375188-54F2-4D85-B7DD-A2BBD3E65AD1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\HwanYoungVer2">
-      <UniqueIdentifier>{919101C3-AA0A-416B-BD82-733666823B4E}</UniqueIdentifier>
+      <UniqueIdentifier>{A9F956F9-86F5-4DCF-B3C5-49235BDFBE06}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2\HwanYoungVer2.Build.cs">
       <Filter>Source\HwanYoungVer2</Filter>
@@ -54,14 +54,20 @@
       <Filter>Source\HwanYoungVer2</Filter>
     </ClInclude>
     <Filter Include="Source\HwanYoungVer2\Private">
-      <UniqueIdentifier>{F53F6828-A4D6-4B66-AE60-4CC599D57A8E}</UniqueIdentifier>
+      <UniqueIdentifier>{F95C9CD4-1114-4ED5-8B14-AE5E7DAA9970}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\HwanYoungVer2\Private\NPC.cpp">
+      <Filter>Source\HwanYoungVer2\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\HwanYoungVer2\Private\PlayerCharacAttributeSet.cpp">
       <Filter>Source\HwanYoungVer2\Private</Filter>
     </ClCompile>
     <Filter Include="Source\HwanYoungVer2\Public">
-      <UniqueIdentifier>{D3B85751-10DE-4DFE-B4FB-AA5861F0BF81}</UniqueIdentifier>
+      <UniqueIdentifier>{00FDAEE5-38A9-44A5-82A5-1EA98178AD61}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\HwanYoungVer2\Public\NPC.h">
+      <Filter>Source\HwanYoungVer2\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\HwanYoungVer2\Public\PlayerCharacAttributeSet.h">
       <Filter>Source\HwanYoungVer2\Public</Filter>
     </ClInclude>
