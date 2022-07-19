@@ -10,6 +10,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "AbilitySystemComponent.h"
 
+
 //////////////////////////////////////////////////////////////////////////
 // AHwanYoungVer2Character
 
@@ -166,13 +167,13 @@ void AHwanYoungVer2Character::MoveRight(float Value)
 	}
 }
 
-/** Updates the AbilitysystemComponent's actorInfo, especially in a multiplayer environment
-* but not sure if our implementation needs this, since it is not a multiplayer game
-* void AHwanYoungVer2Character::PossessedBy(AController* NewController)
+//Updates the AbilitysystemComponent's actorInfo, especially in a multiplayer environment
+// but not sure if our implementation needs this, since it is not a multiplayer game
+ void AHwanYoungVer2Character::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
 	AbilitySystem->RefreshAbilityActorInfo();
 }
-*/
+
 

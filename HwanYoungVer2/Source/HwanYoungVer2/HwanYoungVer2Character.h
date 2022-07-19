@@ -27,7 +27,7 @@ class AHwanYoungVer2Character : public ACharacter, public IAbilitySystemInterfac
 
 	/** More abilities are to be added, but for the sake of simplicity, only one has been added for now*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Abilities, meta = (AllowPrivateAccess = "true"))
-	TSubclassOf<UGameplayAbility> Ability1;
+	TSubclassOf<class UGameplayAbility> Ability1;
 
 public:
 	AHwanYoungVer2Character();
@@ -77,6 +77,8 @@ protected:
 	// Begin Play
 	virtual void BeginPlay() override; 
 
+	//Updates the AbilitysystemComponent's actorInfo, especially in a multiplayer environment
+	virtual void PossessedBy(AController* NewController) override;
 
 public:
 	/** Returns CameraBoom subobject **/
