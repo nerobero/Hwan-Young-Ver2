@@ -231,6 +231,9 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
+/I ..\Plugins\Runtime\GameplayAbilities\Intermediate\Build\Win64\UE4Editor\Inc\GameplayAbilities
+/I ..\Plugins\Runtime\GameplayAbilities\Source
+/I ..\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public
 /I C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Inc\HwanYoungVer2
 /I C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source
 /I C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public
@@ -238,9 +241,6 @@
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh
 /I Runtime\MRMesh\Public
-/I ..\Plugins\Runtime\GameplayAbilities\Intermediate\Build\Win64\UE4Editor\Inc\GameplayAbilities
-/I ..\Plugins\Runtime\GameplayAbilities\Source
-/I ..\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf

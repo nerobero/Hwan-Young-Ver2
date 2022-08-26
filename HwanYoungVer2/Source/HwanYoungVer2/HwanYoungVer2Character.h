@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h" //allows defining an interface for ability system
+#include "GameplayEffectTypes.h"
 #include "HwanYoungVer2Character.generated.h"
 
 
@@ -23,11 +24,11 @@ class AHwanYoungVer2Character : public ACharacter, public IAbilitySystemInterfac
 
 	/** Our ability system */ 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Abilities, meta = (AllowPrivateAccess = "true")) 
-	class UAbilitySystemComponent* AbilitySystem;
+	class UGAS_AbilitySystemComponent* AbilitySystemComponent;
 
-	/** More abilities are to be added, but for the sake of simplicity, only one has been added for now*/
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Abilities, meta = (AllowPrivateAccess = "true"))
-	TSubclassOf<class UGameplayAbility> Ability1;
+	UPROPERTY()
+	class UPlayerCharacAttributeSet* AttributeSet;
+
 
 public:
 	AHwanYoungVer2Character();
@@ -39,6 +40,30 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
+
+	virtual class UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+
+	//Initializes the default attribute set for this character
+	virtual void InitializeAttributeSet();
+
+	//Grants the player default set of abilities, including the passives, melee, range, and some actives
+	virtual void GiveAbilities();
+
+	//Updates the AbilitysystemComponent's actorInfo, especially in a multiplayer environment
+	//Gets called on the server (so basically my end)
+	virtual void PossessedBy(AController* NewController) override;
+	//Gets called on the client (their end)
+	virtual void OnRep_PlayerState() override;
+
+	/**Effect that initializes our default attributes.*/
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "GAS")
+	TSubclassOf<class UGameplayEffect> DefaultAttributeEffect;
+
+	//An array of default abilities
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category = "GAS")
+	TArray<TSubclassOf<class UPlayerCharacGameplayAbility>> DefaultAbilities;
+
+
 
 protected:
 
@@ -77,27 +102,14 @@ protected:
 	// Begin Play
 	virtual void BeginPlay() override; 
 
-	//Updates the AbilitysystemComponent's actorInfo, especially in a multiplayer environment
-	virtual void PossessedBy(AController* NewController) override;
+
 
 public:
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-	//We add this function, overriding it from IAbilitySystemInterface. 
-	FORCEINLINE UAbilitySystemComponent* GetAbilitySystemComponent() const override { return AbilitySystem; }
+	
 	
 };
 
-UENUM(BlueprintType)
-enum class AbilityInput : uint8
-{
-	UseWeapon UMETA(DisplayName = "Use Weapon"), //ID: 0, using weapon to attack
-	SwitchWeapon UMETA(DisplayName = "Switch Weapons"), //ID: 1, switching weapons
-	UseActive1 UMETA(DisplayName = "Use Active Skill 1"), // ID: 2, active 1
-	UseActive2 UMETA(DisplayName = "Use Active Skill 2"), // ID: 3, active 2
-	UseActive3 UMETA(DisplayName = "Use Active Skill 3"), // ID: 4, active 3
-	UseUlt UMETA(DisplayName = "Use Ultimate Skill"), // ID: 5, ult
-	PassiveDash UMETA(DisplayName = "Dash"), // ID: 6, dash (passive)
-};

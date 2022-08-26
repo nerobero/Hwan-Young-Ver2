@@ -6,35 +6,79 @@
 
 #include "UObject/ObjectMacros.h"
 #include "UObject/ScriptMacros.h"
+#include "Net/Core/PushModel/PushModelMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FGameplayAttributeData;
 #ifdef HWANYOUNGVER2_PlayerCharacAttributeSet_generated_h
 #error "PlayerCharacAttributeSet.generated.h already included, missing '#pragma once' in PlayerCharacAttributeSet.h"
 #endif
 #define HWANYOUNGVER2_PlayerCharacAttributeSet_generated_h
 
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_SPARSE_DATA
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_RPC_WRAPPERS
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_RPC_WRAPPERS_NO_PURE_DECLS
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_INCLASS_NO_PURE_DECLS \
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_SPARSE_DATA
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnRep_Physical); \
+	DECLARE_FUNCTION(execOnRep_GaugeP); \
+	DECLARE_FUNCTION(execOnRep_Stamina); \
+	DECLARE_FUNCTION(execOnRep_MP); \
+	DECLARE_FUNCTION(execOnRep_HP);
+
+
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnRep_Physical); \
+	DECLARE_FUNCTION(execOnRep_GaugeP); \
+	DECLARE_FUNCTION(execOnRep_Stamina); \
+	DECLARE_FUNCTION(execOnRep_MP); \
+	DECLARE_FUNCTION(execOnRep_HP);
+
+
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPlayerCharacAttributeSet(); \
 	friend struct Z_Construct_UClass_UPlayerCharacAttributeSet_Statics; \
 public: \
 	DECLARE_CLASS(UPlayerCharacAttributeSet, UAttributeSet, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/HwanYoungVer2"), NO_API) \
-	DECLARE_SERIALIZER(UPlayerCharacAttributeSet)
+	DECLARE_SERIALIZER(UPlayerCharacAttributeSet) \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		hp=NETFIELD_REP_START, \
+		mp, \
+		stamina, \
+		gaugeP, \
+		physical, \
+		NETFIELD_REP_END=physical	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
+private: \
+	REPLICATED_BASE_CLASS(UPlayerCharacAttributeSet) \
+public:
 
 
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_INCLASS \
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_INCLASS \
 private: \
 	static void StaticRegisterNativesUPlayerCharacAttributeSet(); \
 	friend struct Z_Construct_UClass_UPlayerCharacAttributeSet_Statics; \
 public: \
 	DECLARE_CLASS(UPlayerCharacAttributeSet, UAttributeSet, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/HwanYoungVer2"), NO_API) \
-	DECLARE_SERIALIZER(UPlayerCharacAttributeSet)
+	DECLARE_SERIALIZER(UPlayerCharacAttributeSet) \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		hp=NETFIELD_REP_START, \
+		mp, \
+		stamina, \
+		gaugeP, \
+		physical, \
+		NETFIELD_REP_END=physical	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
+private: \
+	REPLICATED_BASE_CLASS(UPlayerCharacAttributeSet) \
+public:
 
 
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_STANDARD_CONSTRUCTORS \
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPlayerCharacAttributeSet(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPlayerCharacAttributeSet) \
@@ -47,7 +91,7 @@ private: \
 public:
 
 
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_ENHANCED_CONSTRUCTORS \
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UPlayerCharacAttributeSet(UPlayerCharacAttributeSet&&); \
@@ -58,28 +102,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPlayerCharacAttributeSet); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UPlayerCharacAttributeSet)
 
 
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_PRIVATE_PROPERTY_OFFSET
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_16_PROLOG
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_GENERATED_BODY_LEGACY \
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_PRIVATE_PROPERTY_OFFSET
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_24_PROLOG
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_PRIVATE_PROPERTY_OFFSET \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_SPARSE_DATA \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_RPC_WRAPPERS \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_INCLASS \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_STANDARD_CONSTRUCTORS \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_PRIVATE_PROPERTY_OFFSET \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_SPARSE_DATA \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_INCLASS \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_GENERATED_BODY \
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_PRIVATE_PROPERTY_OFFSET \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_SPARSE_DATA \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_INCLASS_NO_PURE_DECLS \
-	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_19_ENHANCED_CONSTRUCTORS \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_PRIVATE_PROPERTY_OFFSET \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_SPARSE_DATA \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_INCLASS_NO_PURE_DECLS \
+	HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

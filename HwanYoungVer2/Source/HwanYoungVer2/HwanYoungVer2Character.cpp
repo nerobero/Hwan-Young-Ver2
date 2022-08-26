@@ -9,6 +9,10 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "AbilitySystemComponent.h"
+#include <GAS_AbilitySystemComponent.h>
+#include <PlayerCharacAttributeSet.h>
+#include <PlayerCharacGameplayAbility.h>
+#include <GameplayEffectTypes.h>
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -46,7 +50,11 @@ AHwanYoungVer2Character::AHwanYoungVer2Character()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	// Our ability system component
-	AbilitySystem = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystem"));
+	AbilitySystemComponent = CreateDefaultSubobject<UGAS_AbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+	AbilitySystemComponent->SetIsReplicated(true);
+	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Minimal);
+
+	AttributeSet = CreateDefaultSubobject<UPlayerCharacAttributeSet>(TEXT("Attributes"));
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
@@ -81,8 +89,12 @@ void AHwanYoungVer2Character::SetupPlayerInputComponent(class UInputComponent* P
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AHwanYoungVer2Character::OnResetVR);
 
 	// Set up ability system key bindings 
-	AbilitySystem->BindAbilityActivationToInputComponent(PlayerInputComponent,
-		FGameplayAbilityInputBinds("ConfirmInput", "CancelInput", "AbilityInput")); 
+	 //Key binding: 
+	if (AbilitySystemComponent && InputComponent) {
+		const FGameplayAbilityInputBinds Binds("Confirm", "Cancel", "EAbilityInputID",
+			static_cast<int32>(EAbilityInputID::Confirm), static_cast<int32>(EAbilityInputID::Cancel));
+		AbilitySystemComponent->BindAbilityActivationToInputComponent(InputComponent, Binds);
+	}
 }
 
 
@@ -90,20 +102,38 @@ void AHwanYoungVer2Character::BeginPlay()
 {
 	Super::BeginPlay(); 
 
-	//is the AbilitySystem valid?
-	if (AbilitySystem) {
-		//checks if we are authority and Ability1 is valid 
-		//if a client tries to give oneself an ability,
-		//an assert is violated.
-		if (HasAuthority() && Ability1) {
-			AbilitySystem->GiveAbility(FGameplayAbilitySpec(Ability1.GetDefaultObject(), 1, 0));
+}
+
+
+class UAbilitySystemComponent* AHwanYoungVer2Character::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}
+
+void AHwanYoungVer2Character::InitializeAttributeSet()
+{
+	if (AbilitySystemComponent && DefaultAttributeEffect) {
+		FGameplayEffectContextHandle EffectContext = AbilitySystemComponent->MakeEffectContext();
+		EffectContext.AddSourceObject(this);
+
+		FGameplayEffectSpecHandle SpecHandle = AbilitySystemComponent->MakeOutgoingSpec(DefaultAttributeEffect, 1, EffectContext);
+	
+		if (SpecHandle.IsValid()) {
+			FActiveGameplayEffectHandle GEHandle = AbilitySystemComponent->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
 		}
-		//tells the Abilitysystem what its Owner (the actor responsible for the AbilitySystem) 
-		//and Avatar (the actor through which the AbilitySystem acts, uses Abilities from, etc.) is.
-		AbilitySystem->InitAbilityActorInfo(this, this);
 	}
 }
 
+void AHwanYoungVer2Character::GiveAbilities()
+{
+	if (HasAuthority() && AbilitySystemComponent) {
+		for (TSubclassOf<UPlayerCharacGameplayAbility>& StartupAbility : DefaultAbilities) {
+
+			AbilitySystemComponent->GiveAbility(
+				FGameplayAbilitySpec(StartupAbility, 1, static_cast<int32>(StartupAbility.GetDefaultObject()->AbilityInputID), this));
+		}
+	}
+}
 
 void AHwanYoungVer2Character::OnResetVR()
 {
@@ -173,7 +203,28 @@ void AHwanYoungVer2Character::MoveRight(float Value)
 {
 	Super::PossessedBy(NewController);
 
-	AbilitySystem->RefreshAbilityActorInfo();
+	//In the server:
+	AbilitySystemComponent->InitAbilityActorInfo(this, this); // who is the avatar?
+
+	InitializeAttributeSet();
+	GiveAbilities();
 }
+
+ void AHwanYoungVer2Character::OnRep_PlayerState()
+ {
+	 Super::OnRep_PlayerState();
+
+	 //The same business with intializing: 
+	 AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	 InitializeAttributeSet(); 
+
+	 //Key binding: 
+	 if (AbilitySystemComponent && InputComponent) {
+		 const FGameplayAbilityInputBinds Binds("Confirm", "Cancel", "EAbilityInputID", 
+			 static_cast<int32>(EAbilityInputID::Confirm), static_cast<int32>(EAbilityInputID::Cancel));
+		 AbilitySystemComponent->BindAbilityActivationToInputComponent(InputComponent, Binds);
+	 }
+
+ }
 
 

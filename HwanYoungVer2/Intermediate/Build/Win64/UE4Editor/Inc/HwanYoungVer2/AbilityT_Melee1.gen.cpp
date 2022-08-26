@@ -23,10 +23,9 @@ void EmptyLinkFunctionForGeneratedCodeAbilityT_Melee1() {}
 	{
 		P_GET_OBJECT(UGameplayAbility,Z_Param_OwningAbility);
 		P_GET_PROPERTY(FNameProperty,Z_Param_TaskInstanceName);
-		P_GET_PROPERTY(FFloatProperty,Z_Param_examplevariable);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		*(UAbilityT_Melee1**)Z_Param__Result=UAbilityT_Melee1::CreateMyTask(Z_Param_OwningAbility,Z_Param_TaskInstanceName,Z_Param_examplevariable);
+		*(UAbilityT_Melee1**)Z_Param__Result=UAbilityT_Melee1::CreateMyTask(Z_Param_OwningAbility,Z_Param_TaskInstanceName);
 		P_NATIVE_END;
 	}
 	void UAbilityT_Melee1::StaticRegisterNativesUAbilityT_Melee1()
@@ -43,12 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeAbilityT_Melee1() {}
 		{
 			UGameplayAbility* OwningAbility;
 			FName TaskInstanceName;
-			float examplevariable;
 			UAbilityT_Melee1* ReturnValue;
 		};
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OwningAbility;
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_TaskInstanceName;
-		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_examplevariable;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -58,22 +55,22 @@ void EmptyLinkFunctionForGeneratedCodeAbilityT_Melee1() {}
 	};
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_OwningAbility = { "OwningAbility", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AbilityT_Melee1_eventCreateMyTask_Parms, OwningAbility), Z_Construct_UClass_UGameplayAbility_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_TaskInstanceName = { "TaskInstanceName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AbilityT_Melee1_eventCreateMyTask_Parms, TaskInstanceName), METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_examplevariable = { "examplevariable", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AbilityT_Melee1_eventCreateMyTask_Parms, examplevariable), METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AbilityT_Melee1_eventCreateMyTask_Parms, ReturnValue), Z_Construct_UClass_UAbilityT_Melee1_NoRegister, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_OwningAbility,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_TaskInstanceName,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_examplevariable,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::Function_MetaDataParams[] = {
 		{ "BlueprintInternalUseOnly", "TRUE" },
 		{ "Category", "Ability|Tasks" },
+		{ "Comment", "/**\n\x09UPROPERTY(BlueprintAssignable)\n\x09""FMyTwoParamDelegate OnCalled;\n\x09*/" },
 		{ "DefaultToSelf", "OwningAbility" },
 		{ "DisplayName", "ExecuteMyTask" },
 		{ "HidePin", "OwningAbility" },
 		{ "ModuleRelativePath", "Public/AbilityT_Melee1.h" },
+		{ "ToolTip", "UPROPERTY(BlueprintAssignable)\nFMyTwoParamDelegate OnCalled;" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAbilityT_Melee1, nullptr, "CreateMyTask", nullptr, nullptr, sizeof(AbilityT_Melee1_eventCreateMyTask_Parms), Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask_Statics::Function_MetaDataParams)) };
@@ -105,13 +102,14 @@ void EmptyLinkFunctionForGeneratedCodeAbilityT_Melee1() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_HwanYoungVer2,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UAbilityT_Melee1_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask, "CreateMyTask" }, // 923651353
+		{ &Z_Construct_UFunction_UAbilityT_Melee1_CreateMyTask, "CreateMyTask" }, // 3754386571
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAbilityT_Melee1_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n * Base Ability for Melee attacks\n */" },
 		{ "IncludePath", "AbilityT_Melee1.h" },
 		{ "ModuleRelativePath", "Public/AbilityT_Melee1.h" },
+		{ "ToolTip", "Base Ability for Melee attacks" },
 	};
 #endif
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UAbilityT_Melee1_Statics::StaticCppClassTypeInfo = {
@@ -141,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeAbilityT_Melee1() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UAbilityT_Melee1, 3345831677);
+	IMPLEMENT_CLASS(UAbilityT_Melee1, 2827416338);
 	template<> HWANYOUNGVER2_API UClass* StaticClass<UAbilityT_Melee1>()
 	{
 		return UAbilityT_Melee1::StaticClass();

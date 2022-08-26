@@ -5,9 +5,17 @@
 
 #include "CoreMinimal.h"
 #include "AttributeSet.h"
+#include "AbilitySystemComponent.h"
+
 #include "PlayerCharacAttributeSet.generated.h"
 
-//#include "AttributeSetBase.generated.h"
+ 
+//uses macros from AttributeSet.h
+#define ATTRIBUTE_ACCESSORS(ClassName, PropertyName) \\
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(ClasssName, PropertyName) \\
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(PropertyName) \\
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(PropertyName) \\
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName) 
 
 
 /**
@@ -18,34 +26,41 @@ class HWANYOUNGVER2_API UPlayerCharacAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
 public:
+
 	UPlayerCharacAttributeSet(); //constructor
 	~UPlayerCharacAttributeSet(); //destructor
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	//when there are changes to any attributes, the attribute set needs to be replicated
+	//in order for other appropriate entities within the game level to be aware of such changes 
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Attributes", ReplicatedUsing = OnRep_HP)
 	FGameplayAttributeData hp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes", ReplicatedUsing = OnRep_MP)
 	FGameplayAttributeData mp;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes", ReplicatedUsing = OnRep_Stamina)
+	FGameplayAttributeData stamina; 
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes", ReplicatedUsing = OnRep_GaugeP)
 	FGameplayAttributeData gaugeP;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes", ReplicatedUsing = OnRep_Physical)
 	FGameplayAttributeData physical;
-
 	
-};
+	UFUNCTION()
+		virtual void OnRep_HP(const FGameplayAttributeData& OldHP);
 
-/*
-* UCLASS()
-class USimpleAttributeSet : public UAttributeSet
-{
-	GENERATED_BODY()
-public:
-	/** Set default values. For example, Health should be set to a positive number */
-	//USimpleAttributeSet();
-	/** This measures how much damage can be absorbed before dying. */
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes")
-	//FGameplayAttributeData Health;
-	///};
-	//*/
+	UFUNCTION()
+		virtual void OnRep_MP(const FGameplayAttributeData& OldMP);
+
+	UFUNCTION()
+		virtual void OnRep_Stamina(const FGameplayAttributeData& OldStamina);
+
+	UFUNCTION()
+		virtual void OnRep_GaugeP(const FGameplayAttributeData& OldGaugeP);
+
+	UFUNCTION()
+		virtual void OnRep_Physical(const FGameplayAttributeData& OldPhysical);
+};

@@ -1,0 +1,12 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2).
+  Building HwanYoungVer2Editor...
+  Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 12 processes...
+    [1/4] HwanYoungVer2Character.cpp
+    [2/4] UE4Editor-HwanYoungVer2-0096.lib
+       C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-0096.lib 라이브러리 및 C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-0096.exp 개체를 생성하고 있습니다.
+    [3/4] UE4Editor-HwanYoungVer2-0096.dll
+       C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-0096.suppressed.lib 라이브러리 및 C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\UE4Editor\Development\HwanYoungVer2\UE4Editor-HwanYoungVer2-0096.suppressed.exp 개체를 생성하고 있습니다.
+    [4/4] HwanYoungVer2Editor.target
+  Total time in Parallel executor: 4.35 seconds
+  Total execution time: 5.17 seconds

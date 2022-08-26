@@ -13,101 +13,19 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 // Cross Module References
-	HWANYOUNGVER2_API UEnum* Z_Construct_UEnum_HwanYoungVer2_AbilityInput();
-	UPackage* Z_Construct_UPackage__Script_HwanYoungVer2();
 	HWANYOUNGVER2_API UClass* Z_Construct_UClass_AHwanYoungVer2Character_NoRegister();
 	HWANYOUNGVER2_API UClass* Z_Construct_UClass_AHwanYoungVer2Character();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	UPackage* Z_Construct_UPackage__Script_HwanYoungVer2();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
-	GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemComponent_NoRegister();
+	HWANYOUNGVER2_API UClass* Z_Construct_UClass_UGAS_AbilitySystemComponent_NoRegister();
+	HWANYOUNGVER2_API UClass* Z_Construct_UClass_UPlayerCharacAttributeSet_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
-	GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayAbility_NoRegister();
+	GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayEffect_NoRegister();
+	HWANYOUNGVER2_API UClass* Z_Construct_UClass_UPlayerCharacGameplayAbility_NoRegister();
 	GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
 // End Cross Module References
-	static UEnum* AbilityInput_StaticEnum()
-	{
-		static UEnum* Singleton = nullptr;
-		if (!Singleton)
-		{
-			Singleton = GetStaticEnum(Z_Construct_UEnum_HwanYoungVer2_AbilityInput, Z_Construct_UPackage__Script_HwanYoungVer2(), TEXT("AbilityInput"));
-		}
-		return Singleton;
-	}
-	template<> HWANYOUNGVER2_API UEnum* StaticEnum<AbilityInput>()
-	{
-		return AbilityInput_StaticEnum();
-	}
-	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_AbilityInput(AbilityInput_StaticEnum, TEXT("/Script/HwanYoungVer2"), TEXT("AbilityInput"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_HwanYoungVer2_AbilityInput_Hash() { return 2664218718U; }
-	UEnum* Z_Construct_UEnum_HwanYoungVer2_AbilityInput()
-	{
-#if WITH_HOT_RELOAD
-		UPackage* Outer = Z_Construct_UPackage__Script_HwanYoungVer2();
-		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("AbilityInput"), 0, Get_Z_Construct_UEnum_HwanYoungVer2_AbilityInput_Hash(), false);
-#else
-		static UEnum* ReturnEnum = nullptr;
-#endif // WITH_HOT_RELOAD
-		if (!ReturnEnum)
-		{
-			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "AbilityInput::UseWeapon", (int64)AbilityInput::UseWeapon },
-				{ "AbilityInput::SwitchWeapon", (int64)AbilityInput::SwitchWeapon },
-				{ "AbilityInput::UseActive1", (int64)AbilityInput::UseActive1 },
-				{ "AbilityInput::UseActive2", (int64)AbilityInput::UseActive2 },
-				{ "AbilityInput::UseActive3", (int64)AbilityInput::UseActive3 },
-				{ "AbilityInput::UseUlt", (int64)AbilityInput::UseUlt },
-				{ "AbilityInput::PassiveDash", (int64)AbilityInput::PassiveDash },
-			};
-#if WITH_METADATA
-			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-				{ "BlueprintType", "true" },
-				{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
-				{ "PassiveDash.Comment", "// ID: 5, ult\n" },
-				{ "PassiveDash.DisplayName", "Dash" },
-				{ "PassiveDash.Name", "AbilityInput::PassiveDash" },
-				{ "PassiveDash.ToolTip", "ID: 5, ult" },
-				{ "SwitchWeapon.Comment", "//ID: 0, using weapon to attack\n" },
-				{ "SwitchWeapon.DisplayName", "Switch Weapons" },
-				{ "SwitchWeapon.Name", "AbilityInput::SwitchWeapon" },
-				{ "SwitchWeapon.ToolTip", "ID: 0, using weapon to attack" },
-				{ "UseActive1.Comment", "//ID: 1, switching weapons\n" },
-				{ "UseActive1.DisplayName", "Use Active Skill 1" },
-				{ "UseActive1.Name", "AbilityInput::UseActive1" },
-				{ "UseActive1.ToolTip", "ID: 1, switching weapons" },
-				{ "UseActive2.Comment", "// ID: 2, active 1\n" },
-				{ "UseActive2.DisplayName", "Use Active Skill 2" },
-				{ "UseActive2.Name", "AbilityInput::UseActive2" },
-				{ "UseActive2.ToolTip", "ID: 2, active 1" },
-				{ "UseActive3.Comment", "// ID: 3, active 2\n" },
-				{ "UseActive3.DisplayName", "Use Active Skill 3" },
-				{ "UseActive3.Name", "AbilityInput::UseActive3" },
-				{ "UseActive3.ToolTip", "ID: 3, active 2" },
-				{ "UseUlt.Comment", "// ID: 4, active 3\n" },
-				{ "UseUlt.DisplayName", "Use Ultimate Skill" },
-				{ "UseUlt.Name", "AbilityInput::UseUlt" },
-				{ "UseUlt.ToolTip", "ID: 4, active 3" },
-				{ "UseWeapon.DisplayName", "Use Weapon" },
-				{ "UseWeapon.Name", "AbilityInput::UseWeapon" },
-			};
-#endif
-			static const UE4CodeGen_Private::FEnumParams EnumParams = {
-				(UObject*(*)())Z_Construct_UPackage__Script_HwanYoungVer2,
-				nullptr,
-				"AbilityInput",
-				"AbilityInput",
-				Enumerators,
-				UE_ARRAY_COUNT(Enumerators),
-				RF_Public|RF_Transient|RF_MarkAsNative,
-				EEnumFlags::None,
-				UE4CodeGen_Private::EDynamicType::NotDynamic,
-				(uint8)UEnum::ECppForm::EnumClass,
-				METADATA_PARAMS(Enum_MetaDataParams, UE_ARRAY_COUNT(Enum_MetaDataParams))
-			};
-			UE4CodeGen_Private::ConstructUEnum(ReturnEnum, EnumParams);
-		}
-		return ReturnEnum;
-	}
 	void AHwanYoungVer2Character::StaticRegisterNativesAHwanYoungVer2Character()
 	{
 	}
@@ -130,13 +48,13 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AbilitySystem_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AbilitySystemComponent_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AbilitySystem;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AbilitySystemComponent;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Ability1_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AttributeSet_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Ability1;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_AttributeSet;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseTurnRate_MetaData[];
 #endif
@@ -145,6 +63,15 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DefaultAttributeEffect_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DefaultAttributeEffect;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DefaultAbilities_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DefaultAbilities_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_DefaultAbilities;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -184,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_FollowCamera_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_FollowCamera_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystem_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystemComponent_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Abilities" },
 		{ "Comment", "/** Our ability system */" },
@@ -193,17 +120,14 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 		{ "ToolTip", "Our ability system" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystem = { "AbilitySystem", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, AbilitySystem), Z_Construct_UClass_UAbilitySystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystem_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystem_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystemComponent = { "AbilitySystemComponent", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, AbilitySystemComponent), Z_Construct_UClass_UGAS_AbilitySystemComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystemComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystemComponent_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_Ability1_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Abilities" },
-		{ "Comment", "/** More abilities are to be added, but for the sake of simplicity, only one has been added for now*/" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet_MetaData[] = {
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
-		{ "ToolTip", "More abilities are to be added, but for the sake of simplicity, only one has been added for now" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_Ability1 = { "Ability1", nullptr, (EPropertyFlags)0x0044000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, Ability1), Z_Construct_UClass_UGameplayAbility_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_Ability1_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_Ability1_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet = { "AttributeSet", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, AttributeSet), Z_Construct_UClass_UPlayerCharacAttributeSet_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
@@ -222,13 +146,35 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseLookUpRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAttributeEffect_MetaData[] = {
+		{ "Category", "GAS" },
+		{ "Comment", "/**Effect that initializes our default attributes.*/" },
+		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ToolTip", "Effect that initializes our default attributes." },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAttributeEffect = { "DefaultAttributeEffect", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, DefaultAttributeEffect), Z_Construct_UClass_UGameplayEffect_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAttributeEffect_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAttributeEffect_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities_Inner = { "DefaultAbilities", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UPlayerCharacGameplayAbility_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities_MetaData[] = {
+		{ "Category", "GAS" },
+		{ "Comment", "//An array of default abilities\n" },
+		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ToolTip", "An array of default abilities" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities = { "DefaultAbilities", nullptr, (EPropertyFlags)0x0014000000010015, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, DefaultAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHwanYoungVer2Character_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_FollowCamera,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystem,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_Ability1,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AbilitySystemComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseLookUpRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAttributeEffect,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UAbilitySystemInterface_NoRegister, (int32)VTABLE_OFFSET(AHwanYoungVer2Character, IAbilitySystemInterface), false },
@@ -260,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHwanYoungVer2Character, 3866757292);
+	IMPLEMENT_CLASS(AHwanYoungVer2Character, 3209033544);
 	template<> HWANYOUNGVER2_API UClass* StaticClass<AHwanYoungVer2Character>()
 	{
 		return AHwanYoungVer2Character::StaticClass();
