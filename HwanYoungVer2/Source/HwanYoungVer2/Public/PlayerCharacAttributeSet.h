@@ -46,9 +46,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes", ReplicatedUsing = OnRep_GaugeP)
 	FGameplayAttributeData gaugeP;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attributes", ReplicatedUsing = OnRep_Physical)
-	FGameplayAttributeData physical;
-	
+
+
 	UFUNCTION()
 		virtual void OnRep_HP(const FGameplayAttributeData& OldHP);
 
@@ -61,6 +60,5 @@ public:
 	UFUNCTION()
 		virtual void OnRep_GaugeP(const FGameplayAttributeData& OldGaugeP);
 
-	UFUNCTION()
-		virtual void OnRep_Physical(const FGameplayAttributeData& OldPhysical);
+
 };

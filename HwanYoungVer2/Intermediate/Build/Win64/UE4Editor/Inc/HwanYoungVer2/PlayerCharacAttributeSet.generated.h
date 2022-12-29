@@ -18,7 +18,6 @@ struct FGameplayAttributeData;
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_SPARSE_DATA
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execOnRep_Physical); \
 	DECLARE_FUNCTION(execOnRep_GaugeP); \
 	DECLARE_FUNCTION(execOnRep_Stamina); \
 	DECLARE_FUNCTION(execOnRep_MP); \
@@ -27,7 +26,6 @@ struct FGameplayAttributeData;
 
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOnRep_Physical); \
 	DECLARE_FUNCTION(execOnRep_GaugeP); \
 	DECLARE_FUNCTION(execOnRep_Stamina); \
 	DECLARE_FUNCTION(execOnRep_MP); \
@@ -48,8 +46,7 @@ public: \
 		mp, \
 		stamina, \
 		gaugeP, \
-		physical, \
-		NETFIELD_REP_END=physical	}; \
+		NETFIELD_REP_END=gaugeP	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
 private: \
 	REPLICATED_BASE_CLASS(UPlayerCharacAttributeSet) \
@@ -70,8 +67,7 @@ public: \
 		mp, \
 		stamina, \
 		gaugeP, \
-		physical, \
-		NETFIELD_REP_END=physical	}; \
+		NETFIELD_REP_END=gaugeP	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
 private: \
 	REPLICATED_BASE_CLASS(UPlayerCharacAttributeSet) \

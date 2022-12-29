@@ -23,7 +23,6 @@ void UPlayerCharacAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimePrope
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, mp, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, stamina, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, gaugeP, COND_None, REPNOTIFY_Always);
-	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, physical, COND_None, REPNOTIFY_Always);
 }
 
 void UPlayerCharacAttributeSet::OnRep_HP(const FGameplayAttributeData& OldHP)
@@ -45,14 +44,3 @@ void UPlayerCharacAttributeSet::OnRep_GaugeP(const FGameplayAttributeData& OldGa
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerCharacAttributeSet, gaugeP, OldGaugeP);
 }
-
-void UPlayerCharacAttributeSet::OnRep_Physical(const FGameplayAttributeData& OldPhysical)
-{
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerCharacAttributeSet, physical, OldPhysical);
-}
-
-
-//UPlayerCharacAttributeSet::UPROPERTY(EditAnywhere, BlueprintReadWrite, Category)
-//{
-
-//}
