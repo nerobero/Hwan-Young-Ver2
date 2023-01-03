@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\HwanYoungVer2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F237FBF8-C590-4CB8-9985-0CCEFE8DD30E}</UniqueIdentifier>
+      <UniqueIdentifier>{0C151F32-C553-45FD-B63F-E29F88CAF44D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A63DFE06-BFBA-4C4D-A728-4463902EBD9B}</UniqueIdentifier>
+      <UniqueIdentifier>{BA666DF3-90B3-4B4E-9D4F-F587F72E2A5D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\HwanYoungVer2">
-      <UniqueIdentifier>{24E592D3-54F3-470E-9B06-942EDBD60BE0}</UniqueIdentifier>
+      <UniqueIdentifier>{067B5B08-3B72-4948-A323-992D4700527F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2\HwanYoungVer2.Build.cs">
       <Filter>Source\HwanYoungVer2</Filter>
@@ -57,12 +57,15 @@
       <Filter>Source\HwanYoungVer2</Filter>
     </ClInclude>
     <Filter Include="Source\HwanYoungVer2\Private">
-      <UniqueIdentifier>{F14A6E32-6239-48F2-B010-74BCDABDD5EC}</UniqueIdentifier>
+      <UniqueIdentifier>{1C06CB78-F52F-4AEB-B778-C1B2BC027CB3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\HwanYoungVer2\Private\AbilityT_Melee1.cpp">
       <Filter>Source\HwanYoungVer2\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\HwanYoungVer2\Private\GAS_AbilitySystemComponent.cpp">
+      <Filter>Source\HwanYoungVer2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HwanYoungVer2\Private\HwanYoungAssetManager.cpp">
       <Filter>Source\HwanYoungVer2\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\HwanYoungVer2\Private\MeleeAttributeSet.cpp">
@@ -78,12 +81,15 @@
       <Filter>Source\HwanYoungVer2\Private</Filter>
     </ClCompile>
     <Filter Include="Source\HwanYoungVer2\Public">
-      <UniqueIdentifier>{9427DB12-FD72-438A-8684-64E108D18AE6}</UniqueIdentifier>
+      <UniqueIdentifier>{FF4BCDED-BD65-4B4D-9717-0DFB88B7DC61}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\HwanYoungVer2\Public\AbilityT_Melee1.h">
       <Filter>Source\HwanYoungVer2\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\HwanYoungVer2\Public\GAS_AbilitySystemComponent.h">
+      <Filter>Source\HwanYoungVer2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HwanYoungVer2\Public\HwanYoungAssetManager.h">
       <Filter>Source\HwanYoungVer2\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\HwanYoungVer2\Public\MeleeAttributeSet.h">

@@ -4,10 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "AbilitySystemComponent.h"
-#include "Abilities/GameplayAbility.h"
 #include "GAS_AbilitySystemComponent.generated.h"
 
-
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FReceivedDamageDelegate,
+	UGAS_AbilitySystemComponent*, SourceASC, float, UnmitigatedDamage, float, MitigatedDamage);
 
 
 /**
@@ -20,8 +20,12 @@ class HWANYOUNGVER2_API UGAS_AbilitySystemComponent : public UAbilitySystemCompo
 
 public: 
 
+	bool CharacterAbilitiesGiven = false;
+	bool StartupEffectApplied = false;
+
+	FReceivedDamageDelegate ReceivedDamage;
 	//constructor 
 	UGAS_AbilitySystemComponent();
-
 	
+	virtual void ReceiveDamage(UGAS_AbilitySystemComponent* SourceASC, float UnmitigatedDamage, float MitigatedDamage);
 };

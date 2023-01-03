@@ -18,17 +18,25 @@ struct FGameplayAttributeData;
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_SPARSE_DATA
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execOnRep_MaxGaugeP); \
 	DECLARE_FUNCTION(execOnRep_GaugeP); \
+	DECLARE_FUNCTION(execOnRep_MaxStamina); \
 	DECLARE_FUNCTION(execOnRep_Stamina); \
+	DECLARE_FUNCTION(execOnRep_MaxMP); \
 	DECLARE_FUNCTION(execOnRep_MP); \
+	DECLARE_FUNCTION(execOnRep_MaxHP); \
 	DECLARE_FUNCTION(execOnRep_HP);
 
 
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_PlayerCharacAttributeSet_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnRep_MaxGaugeP); \
 	DECLARE_FUNCTION(execOnRep_GaugeP); \
+	DECLARE_FUNCTION(execOnRep_MaxStamina); \
 	DECLARE_FUNCTION(execOnRep_Stamina); \
+	DECLARE_FUNCTION(execOnRep_MaxMP); \
 	DECLARE_FUNCTION(execOnRep_MP); \
+	DECLARE_FUNCTION(execOnRep_MaxHP); \
 	DECLARE_FUNCTION(execOnRep_HP);
 
 
@@ -43,10 +51,14 @@ public: \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		hp=NETFIELD_REP_START, \
+		maxHP, \
 		mp, \
+		maxMP, \
 		stamina, \
+		maxStamina, \
 		gaugeP, \
-		NETFIELD_REP_END=gaugeP	}; \
+		maxGaugeP, \
+		NETFIELD_REP_END=maxGaugeP	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
 private: \
 	REPLICATED_BASE_CLASS(UPlayerCharacAttributeSet) \
@@ -64,10 +76,14 @@ public: \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		hp=NETFIELD_REP_START, \
+		maxHP, \
 		mp, \
+		maxMP, \
 		stamina, \
+		maxStamina, \
 		gaugeP, \
-		NETFIELD_REP_END=gaugeP	}; \
+		maxGaugeP, \
+		NETFIELD_REP_END=maxGaugeP	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
 private: \
 	REPLICATED_BASE_CLASS(UPlayerCharacAttributeSet) \

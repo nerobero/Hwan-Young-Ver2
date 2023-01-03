@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "HwanYoungVer2",
+			"Path": "C:\\Users\\user\\OneDrive\\Documents\\GitHub\\Hwan-Young-Ver2\\HwanYoungVer2\\Source\\HwanYoungVer2.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "HwanYoungVer2Editor",
+			"Path": "C:\\Users\\user\\OneDrive\\Documents\\GitHub\\Hwan-Young-Ver2\\HwanYoungVer2\\Source\\HwanYoungVer2Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
