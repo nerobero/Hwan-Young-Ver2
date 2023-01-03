@@ -796,3 +796,62 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2023.01.03-09.43.38:257][  0]LogSlate: Took 0.000200 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
 [2023.01.03-09.43.38:355][  0]LogSlate: Took 0.000139 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
 [2023.01.03-09.43.38:384][  2]LogRenderer: Reallocating scene render targets to support 840x396 Format 10 NumSamples 1 (Frame:1).
+[2023.01.03-10.26.17:571][968]LogSlate: Took 0.000210 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2023.01.03-10.26.17:637][968]LogSlate: Took 0.000196 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2023.01.03-10.27.31:159][294]Running C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="C:/Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/HwanYoungVer2.uproject" -game -rocket -progress
+[2023.01.03-10.27.31:463][294]Discovering modules, targets and source code for project...
+[2023.01.03-10.27.33:274][294]Binding IntelliSense data...
+[2023.01.03-10.27.35:702][294]Binding IntelliSense data... 100%
+[2023.01.03-10.27.35:702][294]Writing project files...
+[2023.01.03-10.27.39:831][294]Writing project files... 100%
+[2023.01.03-10.27.40:034][294]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2023.01.03-10.27.40:041][294]Candidate modules for hot reload:
+[2023.01.03-10.27.40:041][294]  HwanYoungVer2
+[2023.01.03-10.27.40:041][294]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=HwanYoungVer2,6935 HwanYoungVer2Editor Win64 Development -Project="C:/Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/HwanYoungVer2.uproject" "C:/Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/HwanYoungVer2.uproject"  -IgnoreJunk]
+[2023.01.03-10.27.50:349][294]CompilerResultsLog: New page: Compilation - Jan 4, 2023, 4:27:50 AM
+[2023.01.03-10.27.50:350][294]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2).
+[2023.01.03-10.27.50:350][294]CompilerResultsLog: Creating makefile for HwanYoungVer2Editor (no existing makefile)
+[2023.01.03-10.27.50:350][294]CompilerResultsLog: Parsing headers for HwanYoungVer2Editor
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\HwanYoungVer2.uproject" "C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Intermediate\Build\Win64\HwanYoungVer2Editor\Development\HwanYoungVer2Editor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\user\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2023.01.03-10.27.50:350][294]CompilerResultsLog: Reflection code generated for HwanYoungVer2Editor in 3.9687399 seconds
+[2023.01.03-10.27.50:350][294]CompilerResultsLog: Building HwanYoungVer2Editor...
+[2023.01.03-10.27.50:350][294]CompilerResultsLog: Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2023.01.03-10.27.50:350][294]CompilerResultsLog: Building 16 actions with 12 processes...
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [1/16] HwanYoungCharacterBase.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [2/16] HwanYoungVer2.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [3/16] HwanYoungVer2.init.gen.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [4/16] HwanYoungVer2.gen.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [5/16] HwanYoungVer2GameMode.gen.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [6/16] HwanYoungCharacterBase.gen.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [7/16] PlayerCharacGameplayAbility.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public\PlayerCharacGameplayAbility.h(7): fatal error C1083: ???? ?????? ?? ?? ?????ϴ?. 'HwanYoungVer2/HwanYoungVer2.h': No such file or directory
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [8/16] HwanYoungVer2Character.gen.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [9/16] HwanYoungVer2GameMode.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [10/16] HwanYoungVer2Character.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public\PlayerCharacAttributeSet.h(15): warning C4005: 'GAMEPLAYATTRIBUTE_PROPERTY_GETTER': ??ũ?? ??????
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public\AttributeSet.h(537): note: 'GAMEPLAYATTRIBUTE_PROPERTY_GETTER'?? ???? ???Ǹ? ?????Ͻʽÿ?.
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public\PlayerCharacAttributeSet.h(16): warning C4005: 'GAMEPLAYATTRIBUTE_VALUE_GETTER': ??ũ?? ??????
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public\AttributeSet.h(543): note: 'GAMEPLAYATTRIBUTE_VALUE_GETTER'?? ???? ???Ǹ? ?????Ͻʽÿ?.
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public\PlayerCharacAttributeSet.h(17): warning C4005: 'GAMEPLAYATTRIBUTE_VALUE_SETTER': ??ũ?? ??????
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public\AttributeSet.h(553): note: 'GAMEPLAYATTRIBUTE_VALUE_SETTER'?? ???? ???Ǹ? ?????Ͻʽÿ?.
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public\PlayerCharacAttributeSet.h(18): warning C4005: 'GAMEPLAYATTRIBUTE_VALUE_INITTER': ??ũ?? ??????
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\GameplayAbilities\Source\GameplayAbilities\Public\AttributeSet.h(560): note: 'GAMEPLAYATTRIBUTE_VALUE_INITTER'?? ???? ???Ǹ? ?????Ͻʽÿ?.
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Public\PlayerCharacGameplayAbility.h(7): fatal error C1083: ???? ?????? ?? ?? ?????ϴ?. 'HwanYoungVer2/HwanYoungVer2.h': No such file or directory
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [11/16] PlayerCharacGameplayAbility.gen.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2/Public/PlayerCharacGameplayAbility.h(7): fatal error C1083: ???? ?????? ?? ?? ?????ϴ?. 'HwanYoungVer2/HwanYoungVer2.h': No such file or directory
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [12/16] GAS_AbilitySystemComponent.cpp
+[2023.01.03-10.27.50:350][294]CompilerResultsLog:   [13/16] GAS_AbilitySystemComponent.gen.cpp
+[2023.01.03-10.27.50:350][294]LogMainFrame: MainFrame: Module compiling took 10.316 seconds
+[2023.01.03-10.27.50:354][294]Warning: HotReload failed, recompile failed
+[2023.01.03-10.27.50:354][294]Warning: RebindPackages failed because compilation failed.
+[2023.01.03-10.27.54:606][294]LogSlate: Window 'Message' being destroyed
+[2023.01.03-10.27.54:609][294]Message dialog closed, result: Yes, title: Message, text: Successfully added class 'HwanYoungCharacterBase', however you must recompile the 'HwanYoungVer2' module before it will appear in the Content Browser. Failed to automatically hot reload the 'HwanYoungVer2' module.
+
+Would you like to open the Output Log to see more details?
+[2023.01.03-10.27.54:635][294]LogSlate: Window 'Add C++ Class' being destroyed
+[2023.01.03-10.27.54:645][294]LogSlate: Took 0.000221 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2023.01.03-10.27.54:687][294]LogSlate: Took 0.001308 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2023.01.03-10.27.54:700][294]LogSlate: Last resort fallback font was requested. Font: '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf', Character: 'ϴ (U+03f4)'
+[2023.01.03-10.27.54:703][294]LogSlate: Took 0.001911 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2023.01.03-10.28.03:682][829]LogSlate: Window 'Output Log' being destroyed
+[2023.01.03-10.28.03:685][829]LogSlate: Window 'Output Log' being destroyed

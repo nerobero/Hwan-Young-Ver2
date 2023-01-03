@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
-#include <HwanYoungVer2/HwanYoungVer2.h>
+#include "HwanYoungVer2.h"
 #include "PlayerCharacGameplayAbility.generated.h"
 
 /**

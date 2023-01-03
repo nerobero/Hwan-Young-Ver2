@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\HwanYoungVer2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{0C151F32-C553-45FD-B63F-E29F88CAF44D}</UniqueIdentifier>
+      <UniqueIdentifier>{F27EA973-3974-4183-BE40-3237D8975ED5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{BA666DF3-90B3-4B4E-9D4F-F587F72E2A5D}</UniqueIdentifier>
+      <UniqueIdentifier>{E9176FCC-C6EF-4756-85CC-FBF4F54E3839}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,31 +33,13 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\HwanYoungVer2">
-      <UniqueIdentifier>{067B5B08-3B72-4948-A323-992D4700527F}</UniqueIdentifier>
+      <UniqueIdentifier>{D21B79ED-D080-4993-A7B8-8BC111DF2C1C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HwanYoungVer2\HwanYoungVer2.Build.cs">
       <Filter>Source\HwanYoungVer2</Filter>
     </None>
-    <ClCompile Include="..\..\Source\HwanYoungVer2\HwanYoungVer2.cpp">
-      <Filter>Source\HwanYoungVer2</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\HwanYoungVer2\HwanYoungVer2.h">
-      <Filter>Source\HwanYoungVer2</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\HwanYoungVer2\HwanYoungVer2Character.cpp">
-      <Filter>Source\HwanYoungVer2</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\HwanYoungVer2\HwanYoungVer2Character.h">
-      <Filter>Source\HwanYoungVer2</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\HwanYoungVer2\HwanYoungVer2GameMode.cpp">
-      <Filter>Source\HwanYoungVer2</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\HwanYoungVer2\HwanYoungVer2GameMode.h">
-      <Filter>Source\HwanYoungVer2</Filter>
-    </ClInclude>
     <Filter Include="Source\HwanYoungVer2\Private">
-      <UniqueIdentifier>{1C06CB78-F52F-4AEB-B778-C1B2BC027CB3}</UniqueIdentifier>
+      <UniqueIdentifier>{25B4E775-8C6E-49D4-9EB5-DE53D4D58A42}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\HwanYoungVer2\Private\AbilityT_Melee1.cpp">
       <Filter>Source\HwanYoungVer2\Private</Filter>
@@ -66,6 +48,18 @@
       <Filter>Source\HwanYoungVer2\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\HwanYoungVer2\Private\HwanYoungAssetManager.cpp">
+      <Filter>Source\HwanYoungVer2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HwanYoungVer2\Private\HwanYoungCharacterBase.cpp">
+      <Filter>Source\HwanYoungVer2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HwanYoungVer2\Private\HwanYoungVer2.cpp">
+      <Filter>Source\HwanYoungVer2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HwanYoungVer2\Private\HwanYoungVer2Character.cpp">
+      <Filter>Source\HwanYoungVer2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HwanYoungVer2\Private\HwanYoungVer2GameMode.cpp">
       <Filter>Source\HwanYoungVer2\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\HwanYoungVer2\Private\MeleeAttributeSet.cpp">
@@ -81,7 +75,7 @@
       <Filter>Source\HwanYoungVer2\Private</Filter>
     </ClCompile>
     <Filter Include="Source\HwanYoungVer2\Public">
-      <UniqueIdentifier>{FF4BCDED-BD65-4B4D-9717-0DFB88B7DC61}</UniqueIdentifier>
+      <UniqueIdentifier>{02E6B96C-EF0A-41E6-9121-7C563F11C51E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\HwanYoungVer2\Public\AbilityT_Melee1.h">
       <Filter>Source\HwanYoungVer2\Public</Filter>
@@ -90,6 +84,18 @@
       <Filter>Source\HwanYoungVer2\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\HwanYoungVer2\Public\HwanYoungAssetManager.h">
+      <Filter>Source\HwanYoungVer2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HwanYoungVer2\Public\HwanYoungCharacterBase.h">
+      <Filter>Source\HwanYoungVer2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HwanYoungVer2\Public\HwanYoungVer2.h">
+      <Filter>Source\HwanYoungVer2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HwanYoungVer2\Public\HwanYoungVer2Character.h">
+      <Filter>Source\HwanYoungVer2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HwanYoungVer2\Public\HwanYoungVer2GameMode.h">
       <Filter>Source\HwanYoungVer2\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\HwanYoungVer2\Public\MeleeAttributeSet.h">

@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define HWANYOUNGVER2_HwanYoungVer2_generated_h
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID HwanYoungVer2_Source_HwanYoungVer2_HwanYoungVer2_h
+#define CURRENT_FILE_ID HwanYoungVer2_Source_HwanYoungVer2_Public_HwanYoungVer2_h
 
 
 #define FOREACH_ENUM_EABILITYINPUTID(op) \

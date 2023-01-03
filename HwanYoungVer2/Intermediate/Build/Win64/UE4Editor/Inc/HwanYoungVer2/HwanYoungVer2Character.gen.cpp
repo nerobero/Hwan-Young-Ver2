@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "HwanYoungVer2/HwanYoungVer2Character.h"
+#include "HwanYoungVer2/Public/HwanYoungVer2Character.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -85,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "HwanYoungVer2Character.h" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 	};
 #endif
 #if WITH_METADATA
@@ -94,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 		{ "Category", "Camera" },
 		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 		{ "ToolTip", "Camera boom positioning the camera behind the character" },
 	};
 #endif
@@ -105,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 		{ "Category", "Camera" },
 		{ "Comment", "/** Follow camera */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 		{ "ToolTip", "Follow camera" },
 	};
 #endif
@@ -116,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 		{ "Category", "Abilities" },
 		{ "Comment", "/** Our ability system */" },
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 		{ "ToolTip", "Our ability system" },
 	};
 #endif
@@ -124,7 +124,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet_MetaData[] = {
 		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet = { "AttributeSet", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHwanYoungVer2Character, AttributeSet), Z_Construct_UClass_UPlayerCharacAttributeSet_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_AttributeSet_MetaData)) };
@@ -132,7 +132,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseTurnRate_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "Comment", "/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 		{ "ToolTip", "Base turn rate, in deg/sec. Other scaling may affect final turn rate." },
 	};
 #endif
@@ -141,7 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_BaseLookUpRate_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "Comment", "/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 		{ "ToolTip", "Base look up/down rate, in deg/sec. Other scaling may affect final rate." },
 	};
 #endif
@@ -150,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAttributeEffect_MetaData[] = {
 		{ "Category", "GAS" },
 		{ "Comment", "/**Effect that initializes our default attributes.*/" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 		{ "ToolTip", "Effect that initializes our default attributes." },
 	};
 #endif
@@ -160,7 +160,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2Character_Statics::NewProp_DefaultAbilities_MetaData[] = {
 		{ "Category", "GAS" },
 		{ "Comment", "//An array of default abilities\n" },
-		{ "ModuleRelativePath", "HwanYoungVer2Character.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2Character.h" },
 		{ "ToolTip", "An array of default abilities" },
 	};
 #endif
@@ -206,7 +206,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2Character() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHwanYoungVer2Character, 3209033544);
+	IMPLEMENT_CLASS(AHwanYoungVer2Character, 23112129);
 	template<> HWANYOUNGVER2_API UClass* StaticClass<AHwanYoungVer2Character>()
 	{
 		return AHwanYoungVer2Character::StaticClass();

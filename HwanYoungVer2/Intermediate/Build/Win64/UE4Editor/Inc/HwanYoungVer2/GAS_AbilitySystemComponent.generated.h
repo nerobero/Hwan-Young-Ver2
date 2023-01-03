@@ -8,10 +8,28 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UGAS_AbilitySystemComponent;
 #ifdef HWANYOUNGVER2_GAS_AbilitySystemComponent_generated_h
 #error "GAS_AbilitySystemComponent.generated.h already included, missing '#pragma once' in GAS_AbilitySystemComponent.h"
 #endif
 #define HWANYOUNGVER2_GAS_AbilitySystemComponent_generated_h
+
+#define HwanYoungVer2_Source_HwanYoungVer2_Public_GAS_AbilitySystemComponent_h_10_DELEGATE \
+struct _Script_HwanYoungVer2_eventReceivedDamageDelegate_Parms \
+{ \
+	UGAS_AbilitySystemComponent* SourceASC; \
+	float UnmitigatedDamage; \
+	float MitigatedDamage; \
+}; \
+static inline void FReceivedDamageDelegate_DelegateWrapper(const FMulticastScriptDelegate& ReceivedDamageDelegate, UGAS_AbilitySystemComponent* SourceASC, float UnmitigatedDamage, float MitigatedDamage) \
+{ \
+	_Script_HwanYoungVer2_eventReceivedDamageDelegate_Parms Parms; \
+	Parms.SourceASC=SourceASC; \
+	Parms.UnmitigatedDamage=UnmitigatedDamage; \
+	Parms.MitigatedDamage=MitigatedDamage; \
+	ReceivedDamageDelegate.ProcessMulticastDelegate<UObject>(&Parms); \
+}
+
 
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_GAS_AbilitySystemComponent_h_19_SPARSE_DATA
 #define HwanYoungVer2_Source_HwanYoungVer2_Public_GAS_AbilitySystemComponent_h_19_RPC_WRAPPERS

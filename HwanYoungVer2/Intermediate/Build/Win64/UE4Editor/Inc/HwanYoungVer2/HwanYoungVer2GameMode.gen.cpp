@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "HwanYoungVer2/HwanYoungVer2GameMode.h"
+#include "HwanYoungVer2/Public/HwanYoungVer2GameMode.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -42,7 +42,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2GameMode() {}
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHwanYoungVer2GameMode_Statics::Class_MetaDataParams[] = {
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "HwanYoungVer2GameMode.h" },
-		{ "ModuleRelativePath", "HwanYoungVer2GameMode.h" },
+		{ "ModuleRelativePath", "Public/HwanYoungVer2GameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -73,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2GameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHwanYoungVer2GameMode, 2040355334);
+	IMPLEMENT_CLASS(AHwanYoungVer2GameMode, 1457013212);
 	template<> HWANYOUNGVER2_API UClass* StaticClass<AHwanYoungVer2GameMode>()
 	{
 		return AHwanYoungVer2GameMode::StaticClass();

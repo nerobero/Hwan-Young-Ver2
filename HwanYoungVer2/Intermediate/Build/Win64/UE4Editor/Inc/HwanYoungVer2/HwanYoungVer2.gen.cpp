@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "HwanYoungVer2/HwanYoungVer2.h"
+#include "HwanYoungVer2/Public/HwanYoungVer2.h"
 #ifdef _MSC_VER
 #pragma warning (push)
 #pragma warning (disable : 4883)
@@ -30,7 +30,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2() {}
 		return EAbilityInputID_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EAbilityInputID(EAbilityInputID_StaticEnum, TEXT("/Script/HwanYoungVer2"), TEXT("EAbilityInputID"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_HwanYoungVer2_EAbilityInputID_Hash() { return 1144839276U; }
+	uint32 Get_Z_Construct_UEnum_HwanYoungVer2_EAbilityInputID_Hash() { return 108384804U; }
 	UEnum* Z_Construct_UEnum_HwanYoungVer2_EAbilityInputID()
 	{
 #if WITH_HOT_RELOAD
@@ -62,7 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2() {}
 				{ "Confirm.DisplayName", "Confirm" },
 				{ "Confirm.Name", "EAbilityInputID::Confirm" },
 				{ "Confirm.ToolTip", "no input given" },
-				{ "ModuleRelativePath", "HwanYoungVer2.h" },
+				{ "ModuleRelativePath", "Public/HwanYoungVer2.h" },
 				{ "None.DisplayName", "None" },
 				{ "None.Name", "EAbilityInputID::None" },
 				{ "PassiveDash.Comment", "//ult\n" },
