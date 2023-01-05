@@ -83,12 +83,21 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 		P_THIS->OnRep_HP(Z_Param_Out_OldHP);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UPlayerCharacAttributeSet::execOnRep_Level)
+	{
+		P_GET_STRUCT_REF(FGameplayAttributeData,Z_Param_Out_OldLevel);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnRep_Level(Z_Param_Out_OldLevel);
+		P_NATIVE_END;
+	}
 	void UPlayerCharacAttributeSet::StaticRegisterNativesUPlayerCharacAttributeSet()
 	{
 		UClass* Class = UPlayerCharacAttributeSet::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "OnRep_GaugeP", &UPlayerCharacAttributeSet::execOnRep_GaugeP },
 			{ "OnRep_HP", &UPlayerCharacAttributeSet::execOnRep_HP },
+			{ "OnRep_Level", &UPlayerCharacAttributeSet::execOnRep_Level },
 			{ "OnRep_MaxGaugeP", &UPlayerCharacAttributeSet::execOnRep_MaxGaugeP },
 			{ "OnRep_MaxHP", &UPlayerCharacAttributeSet::execOnRep_MaxHP },
 			{ "OnRep_MaxMP", &UPlayerCharacAttributeSet::execOnRep_MaxMP },
@@ -175,6 +184,46 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_HP_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics
+	{
+		struct PlayerCharacAttributeSet_eventOnRep_Level_Parms
+		{
+			FGameplayAttributeData OldLevel;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OldLevel_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_OldLevel;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::NewProp_OldLevel_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::NewProp_OldLevel = { "OldLevel", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerCharacAttributeSet_eventOnRep_Level_Parms, OldLevel), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::NewProp_OldLevel_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::NewProp_OldLevel_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::NewProp_OldLevel,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/PlayerCharacAttributeSet.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerCharacAttributeSet, nullptr, "OnRep_Level", nullptr, nullptr, sizeof(PlayerCharacAttributeSet_eventOnRep_Level_Parms), Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -430,6 +479,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_level_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_level;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_hp_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_hp;
@@ -476,6 +529,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_GaugeP, "OnRep_GaugeP" }, // 1082495180
 		{ &Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_HP, "OnRep_HP" }, // 1125076897
+		{ &Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_Level, "OnRep_Level" }, // 3645479807
 		{ &Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_MaxGaugeP, "OnRep_MaxGaugeP" }, // 3813862231
 		{ &Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_MaxHP, "OnRep_MaxHP" }, // 1034095011
 		{ &Z_Construct_UFunction_UPlayerCharacAttributeSet_OnRep_MaxMP, "OnRep_MaxMP" }, // 1050034716
@@ -485,11 +539,17 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "PlayerCharacAttributeSet.h" },
 		{ "ModuleRelativePath", "Public/PlayerCharacAttributeSet.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_level_MetaData[] = {
+		{ "Category", "Level" },
+		{ "ModuleRelativePath", "Public/PlayerCharacAttributeSet.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_level = { "level", "OnRep_Level", (EPropertyFlags)0x0010000100000034, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacAttributeSet, level), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_level_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_level_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_hp_MetaData[] = {
 		{ "Category", "Health" },
@@ -556,6 +616,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UPlayerCharacAttributeSet, damage), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_damage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_damage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_level,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_hp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_maxHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerCharacAttributeSet_Statics::NewProp_mp,
@@ -593,7 +654,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerCharacAttributeSet, 4167946101);
+	IMPLEMENT_CLASS(UPlayerCharacAttributeSet, 976224720);
 	template<> HWANYOUNGVER2_API UClass* StaticClass<UPlayerCharacAttributeSet>()
 	{
 		return UPlayerCharacAttributeSet::StaticClass();
@@ -602,6 +663,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 
 	void UPlayerCharacAttributeSet::ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const
 	{
+		static const FName Name_level(TEXT("level"));
 		static const FName Name_hp(TEXT("hp"));
 		static const FName Name_maxHP(TEXT("maxHP"));
 		static const FName Name_mp(TEXT("mp"));
@@ -612,6 +674,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerCharacAttributeSet() {}
 		static const FName Name_maxGaugeP(TEXT("maxGaugeP"));
 
 		const bool bIsValid = true
+			&& Name_level == ClassReps[(int32)ENetFields_Private::level].Property->GetFName()
 			&& Name_hp == ClassReps[(int32)ENetFields_Private::hp].Property->GetFName()
 			&& Name_maxHP == ClassReps[(int32)ENetFields_Private::maxHP].Property->GetFName()
 			&& Name_mp == ClassReps[(int32)ENetFields_Private::mp].Property->GetFName()

@@ -11,16 +11,13 @@
 
  
 //uses macros from AttributeSet.h
-#define ATTRIBUTE_ACCESSORS(ClassName, PropertyName) 
-#define GAMEPLAYATTRIBUTE_PROPERTY_GETTER(ClasssName, PropertyName) 
-#define GAMEPLAYATTRIBUTE_VALUE_GETTER(PropertyName) 
-#define GAMEPLAYATTRIBUTE_VALUE_SETTER(PropertyName) 
-#define GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName) 
 
+#define ATTRIBUTE_ACCESSORS(ClassName, PropertyName) \
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(ClasssName, PropertyName) \
+    GAMEPLAYATTRIBUTE_VALUE_GETTER(PropertyName) \
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(PropertyName) \
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName) 
 
-/**
- * 
- */
 UCLASS()
 class HWANYOUNGVER2_API UPlayerCharacAttributeSet : public UAttributeSet
 {
@@ -34,37 +31,68 @@ public:
 	//in order for other appropriate entities within the game level to be aware of such changes 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Level", ReplicatedUsing = OnRep_Level)
+	FGameplayAttributeData level;
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, level)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(level)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(level)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(level)
+	
 	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_HP)
 	FGameplayAttributeData hp;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, hp)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, hp)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(hp)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(hp)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(hp)
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_MaxHP)
 	FGameplayAttributeData maxHP;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, maxHP)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, maxHP)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(maxHP)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(maxHP)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(maxHP)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Mana", ReplicatedUsing = OnRep_MP)
 	FGameplayAttributeData mp;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, mp)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, mp)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(mp)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(mp)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(mp)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Mana", ReplicatedUsing = OnRep_MaxMP)
 	FGameplayAttributeData maxMP;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, maxMP)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, maxMP)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(maxMP)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(maxMP)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(maxMP)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Stamina", ReplicatedUsing = OnRep_Stamina)
 	FGameplayAttributeData stamina;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, stamina)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, stamina)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(stamina)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(stamina)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(stamina)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Stamina", ReplicatedUsing = OnRep_MaxStamina)
 	FGameplayAttributeData maxStamina;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, maxStamina)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, maxStamina)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(maxStamina)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(maxStamina)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(maxStamina)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Ultimate Gauge Points", ReplicatedUsing = OnRep_GaugeP)
 	FGameplayAttributeData gaugeP;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, gaugeP)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, gaugeP)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(gaugeP)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(gaugeP)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(gaugeP)
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Ultimate Gauge Points", ReplicatedUsing = OnRep_MaxGaugeP)
 	FGameplayAttributeData maxGaugeP;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, maxGaugeP)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, maxGaugeP)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(maxGaugeP)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(maxGaugeP)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(maxGaugeP)
 
 	//Damage is treated as a meta-attribute which is intended to interact with HP;
 	//This attribute value can be modified with buffs/debuffs in an GameplayEffectExecutionCalculation
@@ -73,7 +101,13 @@ public:
 	//not typically replicated.
 	UPROPERTY(BlueprintReadOnly, Category = "Damage - Meta attribute")
 	FGameplayAttributeData damage;
-	ATTRIBUTE_ACCESSORS(UPlayerCharacAttributeSet, damage)
+	GAMEPLAYATTRIBUTE_PROPERTY_GETTER(UPlayerCharacAttributeSet, damage)
+	GAMEPLAYATTRIBUTE_VALUE_GETTER(damage)
+	GAMEPLAYATTRIBUTE_VALUE_SETTER(damage)
+	GAMEPLAYATTRIBUTE_VALUE_INITTER(damage)
+
+	UFUNCTION()
+		virtual void OnRep_Level(const FGameplayAttributeData& OldLevel);
 	
 	UFUNCTION()
 		virtual void OnRep_HP(const FGameplayAttributeData& OldHP);

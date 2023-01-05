@@ -12,6 +12,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2_init() {}
 	HWANYOUNGVER2_API UFunction* Z_Construct_UDelegateFunction_HwanYoungVer2_ReceivedDamageDelegate__DelegateSignature();
+	HWANYOUNGVER2_API UFunction* Z_Construct_UDelegateFunction_HwanYoungVer2_CharacterDiedDelegate__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_HwanYoungVer2()
 	{
 		static UPackage* ReturnPackage = nullptr;
@@ -19,14 +20,15 @@ void EmptyLinkFunctionForGeneratedCodeHwanYoungVer2_init() {}
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
 				(UObject* (*)())Z_Construct_UDelegateFunction_HwanYoungVer2_ReceivedDamageDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_HwanYoungVer2_CharacterDiedDelegate__DelegateSignature,
 			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/HwanYoungVer2",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x7AB1C008,
-				0xA926B8A4,
+				0x054FE9C2,
+				0xEC2F8D37,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

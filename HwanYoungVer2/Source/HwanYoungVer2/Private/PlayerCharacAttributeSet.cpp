@@ -18,7 +18,8 @@ UPlayerCharacAttributeSet::~UPlayerCharacAttributeSet()
 void UPlayerCharacAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
+	
+	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, level, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, hp, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, maxHP, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, mp, COND_None, REPNOTIFY_Always);
@@ -27,6 +28,11 @@ void UPlayerCharacAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimePrope
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, maxStamina, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, gaugeP, COND_None, REPNOTIFY_Always);
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerCharacAttributeSet, maxGaugeP, COND_None, REPNOTIFY_Always);
+}
+
+void UPlayerCharacAttributeSet::OnRep_Level(const FGameplayAttributeData& OldLevel)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerCharacAttributeSet, level, OldLevel);
 }
 
 void UPlayerCharacAttributeSet::OnRep_HP(const FGameplayAttributeData& OldHP)

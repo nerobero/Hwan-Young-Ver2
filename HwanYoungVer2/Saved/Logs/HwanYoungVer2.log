@@ -855,3 +855,403 @@ Would you like to open the Output Log to see more details?
 [2023.01.03-10.27.54:703][294]LogSlate: Took 0.001911 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
 [2023.01.03-10.28.03:682][829]LogSlate: Window 'Output Log' being destroyed
 [2023.01.03-10.28.03:685][829]LogSlate: Window 'Output Log' being destroyed
+[2023.01.03-17.10.30:720][100]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.03-17.10.30:740][100]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.03-17.10.30:740][100]LogAudioMixer: Display: 1: FrontRight
+[2023.01.03-20.11.50:563][103]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.03-20.11.50:663][103]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.03-20.11.50:663][103]LogAudioMixer: Display: 1: FrontRight
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B9A1E596C-4A80-4598-4796-70A54BDA9ED1%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=cfc450fe43229aa942eb5ba505b9c5dd%7C32687adfc092452a8c7b3c7eba946f33%7Cf3df08f8-79d3-4f93-b2f7-11455938a6e8&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: request failed, libcurl error: 56 (Failure when receiving data from the peer)
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x2a1b8507eb0 [can pipeline])
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 1 (Re-using existing connection! (#1) with host datarouter.ol.epicgames.com)
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (52.45.37.25) port 443 (#1))
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 3 (We are completely uploaded and fine)
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 4 (OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054)
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: 000002A1EFD43900: libcurl info message cache 7 (Closing connection 1)
+[2023.01.03-20.11.51:204][106]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B9A1E596C-4A80-4598-4796-70A54BDA9ED1%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=cfc450fe43229aa942eb5ba505b9c5dd%7C32687adfc092452a8c7b3c7eba946f33%7Cf3df08f8-79d3-4f93-b2f7-11455938a6e8&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2023.01.04-17.21.29:486][559]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.04-17.21.29:504][559]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.04-17.21.29:504][559]LogAudioMixer: Display: 1: FrontRight
+[2023.01.04-17.21.32:500][568]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.04-17.21.32:519][568]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.04-17.21.32:519][568]LogAudioMixer: Display: 1: FrontRight
+[2023.01.04-20.22.47:724][569]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2023.01.04-20.22.47:857][569]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.04-20.22.47:917][569]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.04-20.22.47:917][569]LogAudioMixer: Display: 1: FrontRight
+[2023.01.04-20.22.48:512][572]LogHttp: Warning: 000002A1F806DD00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B9A1E596C-4A80-4598-4796-70A54BDA9ED1%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=cfc450fe43229aa942eb5ba505b9c5dd%7C32687adfc092452a8c7b3c7eba946f33%7Cf3df08f8-79d3-4f93-b2f7-11455938a6e8&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: request failed, libcurl error: 56 (Failure when receiving data from the peer)
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x2a1b8506020 [can pipeline])
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 1 (Re-using existing connection! (#2) with host datarouter.ol.epicgames.com)
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (3.214.132.27) port 443 (#2))
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 3 (We are completely uploaded and fine)
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 4 (OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054)
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2023.01.04-20.22.48:513][572]LogHttp: Warning: 000002A1F806DD00: libcurl info message cache 7 (Closing connection 2)
+[2023.01.04-20.22.48:521][572]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B9A1E596C-4A80-4598-4796-70A54BDA9ED1%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=cfc450fe43229aa942eb5ba505b9c5dd%7C32687adfc092452a8c7b3c7eba946f33%7Cf3df08f8-79d3-4f93-b2f7-11455938a6e8&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2023.01.05-04.06.08:520][249]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{586a8dcd-8b95-4a67-905b-cbd2cd6e0b2e}.
+[2023.01.05-04.06.08:520][249]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.05-04.06.08:608][249]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.05-04.06.08:608][249]LogAudioMixer: Display: 1: FrontRight
+[2023.01.05-07.23.10:713][403]LogAudioMixer: Warning: Changing default audio render device to new device: {0.0.0.00000000}.{1050f16b-88f3-479d-8a2f-f6cb181d2a66}.
+[2023.01.05-07.23.10:713][403]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.05-07.23.10:911][403]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.05-07.23.10:911][403]LogAudioMixer: Display: 1: FrontRight
+[2023.01.05-10.55.49:963][415]LogHotReload: New module detected: UE4Editor-HwanYoungVer2-0006.dll
+[2023.01.05-10.55.50:983][419]LogHotReload: Starting Hot-Reload from IDE
+[2023.01.05-10.55.51:029][419]LogClass: Could not find existing class GAS_AbilitySystemComponent in package /Script/HwanYoungVer2 for HotReload, assuming new class
+[2023.01.05-10.55.51:030][419]LogClass: Could not find existing class HwanYoungCharacterBase in package /Script/HwanYoungVer2 for HotReload, assuming new class
+[2023.01.05-10.55.51:030][419]LogClass: Function FinishDying is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetAbilityLevel is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetCharacterLevel is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetGaugeP is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetHP is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetMaxGaugeP is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetMaxHP is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetMaxMP is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetMaxStamina is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetMP is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function GetStamina is new.
+[2023.01.05-10.55.51:030][419]LogClass: Function IsAlive is new.
+[2023.01.05-10.55.51:030][419]LogClass: Could not find existing class HwanYoungVer2Character in package /Script/HwanYoungVer2 for HotReload, assuming new class
+[2023.01.05-10.55.51:030][419]LogClass: Could not find existing class HwanYoungVer2GameMode in package /Script/HwanYoungVer2 for HotReload, assuming new class
+[2023.01.05-10.55.51:031][419]LogClass: Could not find existing class PlayerCharacAttributeSet in package /Script/HwanYoungVer2 for HotReload, assuming new class
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_GaugeP is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_HP is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_Level is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_MaxGaugeP is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_MaxHP is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_MaxMP is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_MaxStamina is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_MP is new.
+[2023.01.05-10.55.51:031][419]LogClass: Function OnRep_Stamina is new.
+[2023.01.05-10.55.51:032][419]LogClass: Could not find existing class PlayerCharacGameplayAbility in package /Script/HwanYoungVer2 for HotReload, assuming new class
+[2023.01.05-10.55.51:033][419]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2023.01.05-10.55.51:852][419]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.820 s
+[2023.01.05-10.55.51:852][419]LogOutputDevice: Error: === Handled ensure: ===
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: 
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: Ensure condition failed: false [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/GameplayTags/Private/GameplayTagsManager.cpp] [Line: 1721]
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: Requested Tag State.Dead was not found. Check tag data table.
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: Stack: 
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c0a69ab UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c0880ff UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c087ccb UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff97f1a42b1 UE4Editor-HwanYoungVer2-0006.dll!AHwanYoungCharacterBase::AHwanYoungCharacterBase() [C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Private\HwanYoungCharacterBase.cpp:25]
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff97358c203 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff97384fabf UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff97383287f UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff973762305 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff975f799ea UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa12a8 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa0328 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9afc7 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9acc8 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff946daca12 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff975cfe708 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640ad07d UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c117c UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c125a UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d52bd UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d7fea UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a5b47614 KERNEL32.DLL!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a68a26a1 ntdll.dll!UnknownFunction []
+[2023.01.05-10.55.51:853][419]LogOutputDevice: Error: 
+[2023.01.05-10.55.51:859][419]LogStats:                SubmitErrorReport -  0.000 s
+[2023.01.05-10.56.02:478][419]LogStats:                    SendNewReport - 10.618 s
+[2023.01.05-10.56.02:478][419]LogStats:             FDebug::EnsureFailed - 11.445 s
+[2023.01.05-10.56.02:478][419]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2023.01.05-10.56.02:479][419]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.001 s
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: === Handled ensure: ===
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: Ensure condition failed: false [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/GameplayTags/Private/GameplayTagsManager.cpp] [Line: 1721]
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: Requested Tag State.RemoveOnDeath was not found. Check tag data table.
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: Stack: 
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c0a69ab UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c0880ff UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c087ccb UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff97f1a42ed UE4Editor-HwanYoungVer2-0006.dll!AHwanYoungCharacterBase::AHwanYoungCharacterBase() [C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Private\HwanYoungCharacterBase.cpp:26]
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff97358c203 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff97384fabf UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff97383287f UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff973762305 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff975f799ea UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa12a8 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa0328 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9afc7 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9acc8 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff946daca12 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff975cfe708 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640ad07d UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c117c UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c125a UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d52bd UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d7fea UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a5b47614 KERNEL32.DLL!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a68a26a1 ntdll.dll!UnknownFunction []
+[2023.01.05-10.56.02:480][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.02:491][419]LogStats:                SubmitErrorReport -  0.000 s
+[2023.01.05-10.56.08:157][419]LogStats:                    SendNewReport -  5.666 s
+[2023.01.05-10.56.08:157][419]LogStats:             FDebug::EnsureFailed -  5.679 s
+[2023.01.05-10.56.08:157][419]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2023.01.05-10.56.08:159][419]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.001 s
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: === Handled ensure: ===
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: Ensure condition failed: false [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/GameplayTags/Private/GameplayTagsManager.cpp] [Line: 1721]
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: Requested Tag State.Debuff.Stun was not found. Check tag data table.
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: Stack: 
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c0a69ab UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c0880ff UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff97c087ccb UE4Editor-GameplayTags.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff97f1ad523 UE4Editor-HwanYoungVer2-0006.dll!UPlayerCharacGameplayAbility::UPlayerCharacGameplayAbility() [C:\Users\user\OneDrive\Documents\GitHub\Hwan-Young-Ver2\HwanYoungVer2\Source\HwanYoungVer2\Private\PlayerCharacGameplayAbility.cpp:13]
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff97358c203 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff97384fabf UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff97383287f UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff973762305 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff975f799ea UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa12a8 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa0328 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9afc7 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9acc8 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.08:159][419]LogOutputDevice: Error: [Callstack] 0x00007ff946daca12 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff975cfe708 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640ad07d UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c117c UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c125a UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d52bd UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d7fea UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a5b47614 KERNEL32.DLL!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a68a26a1 ntdll.dll!UnknownFunction []
+[2023.01.05-10.56.08:160][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.08:170][419]LogStats:                SubmitErrorReport -  0.000 s
+[2023.01.05-10.56.11:789][419]LogStats:                    SendNewReport -  3.619 s
+[2023.01.05-10.56.11:789][419]LogStats:             FDebug::EnsureFailed -  3.632 s
+[2023.01.05-10.56.11:793][419]LogHotReload: Re-instancing GAS_AbilitySystemComponent after hot-reload.
+[2023.01.05-10.56.11:804][419]LogHotReload: Re-instancing HwanYoungVer2Character after hot-reload.
+[2023.01.05-10.56.11:834][419]LogHotReload: Re-instancing HwanYoungVer2GameMode after hot-reload.
+[2023.01.05-10.56.11:843][419]LogHotReload: Re-instancing PlayerCharacAttributeSet after hot-reload.
+[2023.01.05-10.56.11:843][419]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2023.01.05-10.56.11:843][419]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.001 s
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: === Handled ensure: ===
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: Ensure condition failed: ArchetypeIndex > OldObjIndex [File:D:/Build/++UE4/Sync/Engine/Source/Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp] [Line: 1722]
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: Stack: 
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff975090e09 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff97489c0f7 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff974899b00 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff974898ca6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff974895c2c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff97489617e UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff946da63b7 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff946da69f9 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9ec86 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff97384dcd6 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff973832886 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff973762305 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff975f799ea UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa12a8 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa0328 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9afc7 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9acc8 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff946daca12 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff975cfe708 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640ad07d UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c117c UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c125a UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d52bd UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d7fea UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.11:844][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a5b47614 KERNEL32.DLL!UnknownFunction []
+[2023.01.05-10.56.11:845][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a68a26a1 ntdll.dll!UnknownFunction []
+[2023.01.05-10.56.11:845][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.11:859][419]LogStats:                SubmitErrorReport -  0.000 s
+[2023.01.05-10.56.15:454][419]LogStats:                    SendNewReport -  3.595 s
+[2023.01.05-10.56.15:454][419]LogStats:             FDebug::EnsureFailed -  3.611 s
+[2023.01.05-10.56.15:454][419]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2023.01.05-10.56.15:455][419]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.001 s
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: === Handled ensure: ===
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: Ensure condition failed: bArchetypeReinstanced [File:D:/Build/++UE4/Sync/Engine/Source/Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp] [Line: 1746]
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: Reinstancing non-actor (/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.REINST_ThirdPersonCharacter_C_0.Attributes); failed to resolve archetype object - property values may be lost.
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: Stack: 
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff9750902ee UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff97489c10f UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff974899b00 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff974898ca6 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff974895c2c UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff97489617e UE4Editor-UnrealEd.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff946da63b7 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff946da69f9 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9ec86 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff97384dcd6 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff973832886 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff973762305 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff975f799ea UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa12a8 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff975fa0328 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.15:455][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9afc7 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff946d9acc8 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff946daca12 UE4Editor-HotReload.dll!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff975cfe708 UE4Editor-Core.dll!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640ad07d UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c117c UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640c125a UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d52bd UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff7640d7fea UE4Editor.exe!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a5b47614 KERNEL32.DLL!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: [Callstack] 0x00007ff9a68a26a1 ntdll.dll!UnknownFunction []
+[2023.01.05-10.56.15:456][419]LogOutputDevice: Error: 
+[2023.01.05-10.56.15:467][419]LogStats:             FDebug::EnsureFailed -  0.013 s
+[2023.01.05-10.56.15:473][419]LogHotReload: Re-instancing PlayerCharacGameplayAbility after hot-reload.
+[2023.01.05-10.56.15:486][419]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HwanYoungVer2' in 0.0003 seconds. Added 10 classes and 3 folders.
+[2023.01.05-10.56.15:488][419]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2023.01.05-10.56.15:528][419]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0091 seconds. Added 3695 classes and 869 folders.
+[2023.01.05-10.56.15:548][419]Display: HotReload took 24.6s.
+[2023.01.05-10.56.15:564][419]LogAudioMixer: Resetting audio stream to device id 
+[2023.01.05-10.56.15:588][419]LogAudioMixer: Display: 0: FrontLeft
+[2023.01.05-10.56.15:588][419]LogAudioMixer: Display: 1: FrontRight
+[2023.01.05-11.09.57:460][152]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2023.01.05-11.10.17:089][321]LogStats: FGameplayAbilitiesEditorModule::GameplayTagTreeChanged -  0.000 s
+[2023.01.05-11.10.17:089][321]LogStats: ConstructGameplayTagTree GameplayTag tables after adding new tag -  0.000 s
+[2023.01.05-11.10.46:463][ 82]LogStats: FGameplayAbilitiesEditorModule::GameplayTagTreeChanged -  0.000 s
+[2023.01.05-11.10.46:463][ 82]LogStats: ConstructGameplayTagTree GameplayTag tables after adding new tag -  0.000 s
+[2023.01.05-11.10.48:124][180]LogSlate: Window 'Project Settings' being destroyed
+[2023.01.05-11.10.48:127][180]LogSlate: Window 'Project Settings' being destroyed
+[2023.01.05-11.10.49:020][231]LogUObjectHash: Compacting FUObjectHashTables data took   0.85ms
+[2023.01.05-11.10.49:038][231]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/ThirdPersonExampleMap0E2147214094370CD3A685BFCA7ABF14.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2023.01.05-11.10.49:157][231]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/ThirdPersonExampleMap_BuiltData73A800704E0E89388A029E863E746C8C.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2023.01.05-11.10.49:165][231]AssetCheck: New page: Asset Save: multiple assets
+[2023.01.05-11.10.49:165][231]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2023.01.05-11.10.49:165][231]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2023.01.05-11.10.50:057][284]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2023.01.05-11.10.50:071][284]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/ThirdPersonExampleMap3AB9312642708BD0876EABA60CD2F2D4.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2023.01.05-11.10.50:145][284]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/ThirdPersonExampleMap_BuiltData2FC054E7438DF8C2964EB59320D500A6.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2023.01.05-11.10.50:153][284]AssetCheck: New page: Asset Save: multiple assets
+[2023.01.05-11.10.50:153][284]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2023.01.05-11.10.50:153][284]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2023.01.05-11.11.11:203][535]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2023.01.05-11.11.30:356][411]LogStats: FGameplayAbilitiesEditorModule::GameplayTagTreeChanged -  0.000 s
+[2023.01.05-11.11.30:356][411]LogStats: ConstructGameplayTagTree GameplayTag tables after adding new tag -  0.000 s
+[2023.01.05-11.12.20:733][822]LogSlate: Window 'Project Settings' being destroyed
+[2023.01.05-11.12.20:736][822]LogSlate: Window 'Project Settings' being destroyed
+[2023.01.05-11.12.22:173][906]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2023.01.05-11.12.22:189][906]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/ThirdPersonExampleMapB6297E8A4A90CD2414202DA4C053D6F3.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2023.01.05-11.12.22:264][906]LogSavePackage: Moving '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Saved/ThirdPersonExampleMap_BuiltData1C37A3204A597991DC69C590160170A9.tmp' to '../../../../../../Users/user/OneDrive/Documents/GitHub/Hwan-Young-Ver2/HwanYoungVer2/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2023.01.05-11.12.22:274][906]AssetCheck: New page: Asset Save: multiple assets
+[2023.01.05-11.12.22:274][906]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2023.01.05-11.12.22:274][906]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2023.01.05-11.12.23:071][954]MapCheck: New page: Map Check
+[2023.01.05-11.12.23:080][954]Cmd: MAP REBUILD ALLVISIBLE
+[2023.01.05-11.12.23:080][954]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2023.01.05-11.12.23:082][954]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=false
+[2023.01.05-11.12.23:091][954]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2023.01.05-11.12.23:092][954]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2023.01.05-11.12.23:092][954]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2023.01.05-11.12.23:097][954]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2023.01.05-11.12.23:101][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.23:108][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.23:109][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.23:111][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.23:112][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.23:114][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 10
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 9
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 8
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 7
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 6
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 4
+[2023.01.05-11.12.23:117][954]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 3
+[2023.01.05-11.12.23:117][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.23:119][954]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 8
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 7
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 6
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 5
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 4
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 3
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 2
+[2023.01.05-11.12.24:341][954]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 1
+[2023.01.05-11.12.24:341][954]TextureStreamingBuild: Display: Compiling optional shaders took 1.244 seconds.
+[2023.01.05-11.12.24:381][954]LogLevel: Display: Export Material TexCoord Scales took 0.040 seconds.
+[2023.01.05-11.12.24:383][954]TextureStreamingBuild: Display: Build Texture Streaming took 0.001 seconds.
+[2023.01.05-11.12.24:387][954]LogUObjectHash: Compacting FUObjectHashTables data took   0.28ms
+[2023.01.05-11.12.24:390][954]LightingResults: New page: Lighting Build - Jan 6, 2023, 5:12:24 AM
+[2023.01.05-11.12.24:500][954]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2023.01.05-11.12.24:538][954]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2023.01.05-11.12.24:548][954]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2023.01.05-11.12.25:574][954]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2023.01.05-11.12.25:574][954]LogSwarmInterface: [TryOpenConnection] Local Process ID is 16192
+[2023.01.05-11.12.32:360][954]LogStaticLightingSystem: Warning: Failed to build lighting!!! Lighting build canceled.
+[2023.01.05-11.12.33:363][954]LogEditorBuildUtils: Build time 0:10
+[2023.01.05-11.12.33:594][961]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter2)
+[2023.01.05-11.12.52:734][ 84]Cmd: DELETE
+[2023.01.05-11.12.52:734][ 84]Cmd: ACTOR DELETE
+[2023.01.05-11.12.52:736][ 84]LogEditorActor: Deleted Actor: ThirdPersonCharacter_C
+[2023.01.05-11.12.52:745][ 84]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2023.01.05-11.12.52:746][ 84]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2023.01.05-11.12.55:304][238]Cmd: TRANSACTION UNDO
+[2023.01.05-11.12.55:304][238]LogEditorTransaction: Undo Delete Actors
+[2023.01.05-11.13.14:515][557]LogHotReload: New module detected: UE4Editor-HwanYoungVer2-0007.dll
+[2023.01.05-11.13.15:195][560]LogHotReload: Starting Hot-Reload from IDE
+[2023.01.05-11.13.15:236][560]LogClass: Could not find existing class PlayerCharacAttributeSet in package /Script/HwanYoungVer2 for HotReload, assuming new class
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_GaugeP is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_HP is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_Level is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_MaxGaugeP is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_MaxHP is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_MaxMP is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_MaxStamina is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_MP is new.
+[2023.01.05-11.13.15:236][560]LogClass: Function OnRep_Stamina is new.
+[2023.01.05-11.13.15:237][560]LogClass: EAbilityInputID HotReload.
+[2023.01.05-11.13.15:242][560]LogHotReload: Re-instancing HwanYoungVer2Character after hot-reload.
+[2023.01.05-11.13.15:248][560]LogProperty: Warning: Serialized Class /Script/HwanYoungVer2.PlayerCharacAttributeSet for a property of Class /Engine/Transient.HOTRELOADED_PlayerCharacAttributeSet_5. Reference will be nullptred.
+    Property = ObjectProperty /Script/HwanYoungVer2.HwanYoungVer2Character:AttributeSet
+    Item = PlayerCharacAttributeSet /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.Default__ThirdPersonCharacter_C:Attributes
+[2023.01.05-11.13.15:248][560]LogProperty: Warning: Serialized Class /Script/HwanYoungVer2.PlayerCharacAttributeSet for a property of Class /Engine/Transient.HOTRELOADED_PlayerCharacAttributeSet_5. Reference will be nullptred.
+    Property = ObjectProperty /Script/HwanYoungVer2.HwanYoungVer2Character:AttributeSet
+    Item = PlayerCharacAttributeSet /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.Default__SKEL_ThirdPersonCharacter_C:Attributes
+[2023.01.05-11.13.15:250][560]LogProperty: Warning: Serialized Class /Script/HwanYoungVer2.PlayerCharacAttributeSet for a property of Class /Engine/Transient.HOTRELOADED_PlayerCharacAttributeSet_5. Reference will be nullptred.
+    Property = ObjectProperty /Script/HwanYoungVer2.HwanYoungVer2Character:AttributeSet
+    Item = PlayerCharacAttributeSet /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonCharacter2.Attributes
+[2023.01.05-11.13.15:326][560]LogProperty: Warning: Serialized Class /Script/HwanYoungVer2.PlayerCharacAttributeSet for a property of Class /Engine/Transient.HOTRELOADED_PlayerCharacAttributeSet_5. Reference will be nullptred.
+    Property = ObjectProperty /Script/HwanYoungVer2.HwanYoungVer2Character:AttributeSet
+    Item = PlayerCharacAttributeSet /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonCharacter_2.Attributes
+[2023.01.05-11.13.15:423][560]LogHotReload: Re-instancing PlayerCharacAttributeSet after hot-reload.
+[2023.01.05-11.13.15:427][560]LogHotReload: Re-instancing PlayerCharacGameplayAbility after hot-reload.
+[2023.01.05-11.13.15:439][560]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HwanYoungVer2' in 0.0004 seconds. Added 10 classes and 3 folders.
+[2023.01.05-11.13.15:441][560]Display: HotReload successful (16 functions remapped  0 scriptstructs remapped)
+[2023.01.05-11.13.15:479][560]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0105 seconds. Added 3695 classes and 869 folders.
+[2023.01.05-11.13.15:482][560]Display: HotReload took  0.3s.
+[2023.01.05-11.13.30:780][  3]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter
+[2023.01.05-11.13.30:987][  3]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 126 classes and 0 folders.
+[2023.01.05-11.13.33:135][ 81]LogSlate: Took 0.000917 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2023.01.05-11.13.37:238][316]LogSlate: Window 'ThirdPersonCharacter' being destroyed
+[2023.01.05-11.13.37:242][316]LogSlate: Window 'ThirdPersonCharacter' being destroyed
+[2023.01.05-11.13.37:245][316]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2023.01.05-11.13.37:245][316]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2023.01.05-11.13.52:015][186]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter
+[2023.01.05-11.14.03:732][862]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2023.01.05-11.14.07:913][112]LogSlate: Window 'ThirdPersonCharacter' being destroyed
+[2023.01.05-11.14.07:917][112]LogSlate: Window 'ThirdPersonCharacter' being destroyed
+[2023.01.05-11.14.07:920][112]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2023.01.05-11.14.07:920][112]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
